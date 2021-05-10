@@ -1,0 +1,222 @@
+.pricing{
+  background: $color-white;
+  &__adv{
+    width: 100vw;
+    margin-left: -12rem;
+    background: #FAFAFA;
+    &_subH{
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem 0;
+      margin-top: -4rem;
+      line-height: 1.5;
+    }
+    &_flex{
+      padding: 6rem 25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-item{
+        height: 50rem;
+        margin: 2%;
+        width: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-title{
+          // background: $color-white;
+          box-shadow: 0 0rem 5rem rgba($color-exim-grey,1);
+          width: 30rem;
+          margin-top: -5rem;
+          z-index: 100;
+          padding: 3rem;
+          border-radius: 10px;
+          & div{
+            margin-bottom: 2rem;
+            font-size: 2.3rem;
+            color: #525252;
+            font-weight: bold;
+          }
+          & a{
+            background: $color-exim-blue;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            width: 25rem;
+            transition: all .2s;
+            border-radius: 8px;
+            padding: 1rem 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+              width: 2.5rem;
+            }
+            &:hover{
+              box-shadow: 0 5px 1rem rgba($color-grey,.4);
+              transform: translateY(-3px);
+            }
+            & > *{
+              margin: 0 .5rem;
+            }
+
+          }
+        }
+        & > img{
+          // z-index: -1;
+          object-position: top;
+          background: $color-white;
+          box-shadow: 0 -3rem 3rem rgba($color-exim-grey,.5);
+          height:25rem;
+          width: 30rem;
+          padding: 2rem;
+          padding-bottom: 0;
+          border-radius: 8px;
+          // width: 100%;
+          // object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &__back{
+    background:#F2F2F2;
+    padding: 3rem;
+    padding-bottom: 5rem;
+    width: 100vw;
+    margin-left: -12rem;
+    position: relative;
+  }
+  &__course{
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    margin-left: -12rem;
+    background:#F2F2F2;
+    padding: 6rem 17rem;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    & img{
+      top:-20%;
+      left:16%;
+    }
+    &_btn{
+      background: $color-exim-blue;
+      font-size: 1.7rem;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      position:absolute;
+      bottom: 5rem;
+      right: 17rem;
+      // display: inline-block;
+      // float: right;
+      padding: 1rem 3rem;
+      font-weight: bold;
+      color: white;
+      width: 25rem;
+      transition: all .2s;
+      border-radius: 8px;
+
+      & img{
+        width: 2.5rem;
+      }
+      &:hover{
+        box-shadow: 0 5px 1rem rgba($color-grey,.4);
+        transform: translateY(-3px);
+      }
+      & > *{
+        margin: 0 .5rem;
+      }
+    }
+  }
+  & h4{
+    text-align: center;
+    margin-top: -4rem ;
+    margin-bottom: 8rem;
+    color: $color-exim-grey;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  &__cards{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.card{
+  min-height: 72rem;
+  width: 35rem;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  background:$color-white;
+  color: $color-black;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba($color-black,.3);
+  border-radius: 12px;
+  transition: all .3s ;
+  text-transform: uppercase;
+  &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0rem 3rem 3rem  rgba($color-exim-dark-grey,.7);
+  }
+  & h3{
+    font-size: 1.4rem;
+    color: #77D65B;
+    text-transform: uppercase;
+    margin-right: 4rem;
+    text-align: right;
+    margin-bottom: 2rem;
+  }
+  & hr{
+    width: 80%;
+    margin: .5rem auto;
+    margin-bottom: 5rem;
+  }
+  &__name{
+    text-align:center;
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  &__price{
+    text-align:center;
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+  }
+  & ul{
+    flex-grow: 1;
+    & li{
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      margin: 2rem 0;
+      & strong{
+        margin-right: .5rem;
+      }
+      & img{
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+.black{
+  color:$color-white;
+  background: $color-black;
+}
+@include respond(tab-land){
+  .pricing__cards{
+    flex-direction: column;
+    & > div{
+      margin-top: 1.5rem
+    }
+  }
+};
+#pricing__course{
+  margin: 0;
+}

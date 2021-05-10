@@ -1,0 +1,227 @@
+.landing__10{
+  background: $color-black;
+  margin-bottom: 20rem;
+  position:relative;
+  width: 100vw;
+  left: -12rem;
+  overflow: visible;
+  height: 80vh;
+  margin-top: 10rem;
+  &_img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &_play{
+    position:absolute;
+    right: 70%;
+    top: 30%;
+    z-index: 2;
+    height: 10rem;
+  }
+  &_orbits{
+    position:absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    animation: scaleY 10s linear infinite;
+    opacity: .5;
+    &-mob{
+      display: none;
+      @include respond(tab-port){
+        display: flex;
+      }
+    }
+    &-desk{
+      @include respond(tab-port){
+        display: none;
+      }
+    }
+  }
+  &_text{
+    font-size: 1.2rem;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    color: $color-white;
+    z-index: 3;
+    text-align: center;
+    &-flex{
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      font-weight: 500;
+      & > *{
+        margin: 0 5rem;
+        @include respond(tab-port){
+            margin: 0rem 1rem;
+        }
+      }
+      & span{
+        font-size: 11rem;
+        position: relative;
+
+        & img{
+          position: absolute;
+          top:2rem;
+          left: 2rem;
+          transform: translate(-50%,-50%);
+        }
+        @include respond(tab-port){
+            font-size: 4rem;
+            & img{
+              width: 10rem;
+              top: 0;
+              left: 0;
+            }
+        }
+      }
+      & p{
+        font-size: 5.5rem;
+        color: white;
+        @include respond(tab-port){
+            font-size: 2rem;
+        }
+      }
+      &--btn{
+        padding: 1rem 3rem;
+        color: black;
+        background: white;
+        border: 1px solid white;
+        font-size: 1.8rem;
+        border-radius: 8px;
+        margin-top: 4rem;
+        cursor: pointer;
+        @include respond(tab-port){
+            padding: 1rem;
+            font-size: 1.4rem;
+        }
+        &Rev{
+          color: white;
+          background: black;
+        }
+      }
+    }
+    &_1{
+      text-align: center;
+      font-size: 1.6rem;
+      position:absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 23%;
+      z-index: 1;
+      // width: 35rem;
+      color: $color-white;
+      // font-weight: bold;
+      & h4{
+        font-weight: lighter;
+        font-size: 1.2rem;
+        margin: .5rem;
+        color: $color-white;
+      }
+      // & div{
+      //   max-width:50rem;
+      //
+      // }
+    }
+    &_2,&_3,&_4,&_5{
+      text-align: center;
+      font-size: 3rem;
+      position:absolute;
+      z-index: 1000;
+      // width: 35rem;
+      color: $color-white;
+      font-weight: bold;
+      bottom: 12%;
+      transform: translateX(-50%);
+      & h3{
+        font-weight: bold;
+        font-size: 2rem;
+        margin: .5rem;
+      }
+      & h5{
+        font-weight: lighter;
+        font-size: 1.2rem;
+        margin: .5rem;
+      }
+    }
+    &_2{
+      left: 25%;
+
+    }
+    &_3{
+       left: 40%;
+    }
+    &_4{
+       left: 55%;
+    }
+    &_5{
+       left: 70%;
+    }
+  }
+  @include respond(tab-land){
+    left: -1rem;
+    height: 50vh;
+    bottom: 20%;
+    overflow: hidden;
+    &_img{
+      object-fit: fill;
+      object-position: center;
+      height: 100%;
+    }
+    &_play{
+      position:absolute;
+      right: 30%;
+      top: 73%;
+      z-index: 0;
+      height: 10rem;
+      display: none;
+    }
+  &_text{
+    font-size: 2.5rem;
+     &_1{
+       // display: none;
+       left:50%;
+       & h2{
+         font-size: 1rem;
+       }
+       & h4{
+         font-size: .6rem;
+       }
+       & div{
+          font-size: 1.2rem;
+       }
+     }
+     &_2,&_3,&_4,&_5{
+       & h3{
+         font-size: 1.2rem;
+       }
+       & h5{
+         font-size: .8rem;
+       }
+     }
+     &_2{
+       left:33%;
+       bottom: 20%;
+     }
+     &_3{
+       left: 66%;
+       bottom: 20%;
+     }
+     &_4{
+       left:33%;
+       bottom: 10%;
+     }
+     &_5{
+       left: 66%;
+       bottom: 10%;
+     }
+  }
+ }
+}

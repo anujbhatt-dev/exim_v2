@@ -1,0 +1,109 @@
+.nav{
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__compName{
+
+  }
+  &__link{
+    color: $color-exim-grey;
+    padding: 0 2rem;
+    &:hover{
+      color: $color-exim-blue;
+      text-decoration: none;
+    }
+  }
+  &__list{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    @include respond(tab-port){
+      display: none;
+    }
+    &_Hr{
+      width: 50%;
+      margin: 0 auto;
+      color: $color-exim-blue;
+      margin-top: 1rem;
+      border: none;
+      border-top: .3rem solid $color-exim-blue;
+      border-radius: 5px;
+      transition: all 1s ease-out;
+    }
+    & a{
+
+    }
+    &_item{
+
+    }
+  }
+}
+
+#nav__list_a{
+  font-size: 1.5rem;
+  position: relative;
+  top: -1.5rem;
+  & img{
+    height: 1.5rem;
+  }
+}
+
+.nav__mob{
+  display: none;
+}
+
+@include respond(tab-port){
+  .nav{
+    padding: 1rem 2rem;
+    // flex-direction:column;
+    position: relative;
+    // position:sticky;
+    // top: 0;
+    background: transparent;
+    height: 7rem;
+    // left: -2rem;
+    margin-left: -1rem;
+    width: 100vw;
+    z-index: 1000;
+    & img{
+      height: 5rem;
+    }
+    &__mob{
+      overflow: hidden;
+       display: flex;
+       justify-content:space-between;
+       align-items: center;
+       padding:  1rem;
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100vw;
+       background: $color-white;
+       z-index: 2000000000;
+       & a{
+         display: flex;
+         justify-content: center;
+         align-items:center;
+         flex-direction: column;
+         color: black;
+         & svg{
+           width: 5rem;
+           object-fit: cover;
+         }
+       }
+       &_a-name{
+         font-size: 1.3rem;
+         font-weight: bolder;
+         // letter-spacing: 1.5px;
+         margin-top: .3rem;
+       }
+    }
+  }
+};
