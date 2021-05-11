@@ -24,23 +24,25 @@ import axios from 'axios'
 
        axios.get(BLOGGER_POST_API)
        .then(res=>this.setState({blog:res.data}))
-       .catch(err=>alert("somethin went wrong -> Log.jsx"))
+       .catch(err=>{
+           alert("oops.. something went wrong. please try again");
+           window.location="https://eximeducation.com/blogs"})
 
 // alert(postId)
     }
 
-    componentDidUpdate=()=>{
-        let blogId="2936337281138035481";
-     //    console.log(this.props.location.search.substring(9));
-        let postId=this.props.match.params.postId;
-        let BLOGGER_POST_API=`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts/${postId}?key=${this.GOOGLE_APP_KEY}`;
+//     componentDidUpdate=()=>{
+//         let blogId="2936337281138035481";
+//      //    console.log(this.props.location.search.substring(9));
+//         let postId=this.props.match.params.postId;
+//         let BLOGGER_POST_API=`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts/${postId}?key=${this.GOOGLE_APP_KEY}`;
  
-        axios.get(BLOGGER_POST_API)
-        .then(res=>this.setState({blog:res.data}))
-        .catch(err=>alert("somethin went wrong -> Log.jsx"))
+//         axios.get(BLOGGER_POST_API)
+//         .then(res=>this.setState({blog:res.data}))
+//         .catch(err=>alert("somethin went wrong -> Log.jsx"))
  
-//  alert(postId)
-     }
+// //  alert(postId)
+//      }
 
 render() {
 
