@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import pr from "../../../assets/images/planeRoute.svg";
 import filledArrow from "../../../assets/images/filledArrow.svg";
+import coursemob from "../../../assets/images/coursemob.svg";
 import arrow1 from "../../../assets/images/arrow.svg";
 
 class Pricing extends Component {
@@ -325,6 +326,13 @@ class Pricing extends Component {
                                 </div>
                       })
                     }
+                 </div>
+                 <div className="course__wrapperMob">
+                      <img src={coursemob} alt=""/>
+                      <div className="course__wrapperMob_flex">
+                          <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
+                          <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse1">View Details</Link>
+                      </div>
                  </div>
              </div>
         </div>

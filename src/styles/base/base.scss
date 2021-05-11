@@ -162,7 +162,6 @@ a {
 }
 .layout{
   position:relative;
-  overflow-x: hidden;
   &__city{
     position: absolute;
     top: 0;
@@ -177,5 +176,8 @@ a {
     @include respond(tab-port){
       padding: 2rem 2rem 2rem 2rem;
     }
+  }
+  @include respond(tab-port){
+    overflow-x: hidden;
   }
 }

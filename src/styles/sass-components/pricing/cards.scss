@@ -4,6 +4,9 @@
     width: 100vw;
     margin-left: -12rem;
     background: #FAFAFA;
+    @include respond(tab-port){
+      margin: 0;
+    }
     &_subH{
       font-size: 2rem;
       text-align: center;
@@ -16,6 +19,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include respond(tab-port){
+        flex-direction: column;
+        padding: 1rem;
+      }
       &-item{
         height: 50rem;
         margin: 2%;
@@ -87,6 +94,9 @@
     width: 100vw;
     margin-left: -12rem;
     position: relative;
+    @include respond(tab-port){
+      display: none;
+    }
   }
   &__course{
     margin: 0;
@@ -98,6 +108,9 @@
     // display: flex;
     // justify-content: center;
     // flex-direction: column;
+    @include respond(tab-port){
+      margin: 0;
+    }
     & img{
       top:-20%;
       left:16%;
@@ -119,6 +132,9 @@
       width: 25rem;
       transition: all .2s;
       border-radius: 8px;
+      @include respond(tab-port){
+        display: none;
+      }
 
       & img{
         width: 2.5rem;
