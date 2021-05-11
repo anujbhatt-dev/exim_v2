@@ -70,7 +70,8 @@ export default class WebinarConfig extends Component {
             <input type="text" required className="landing__10_webinar-name" onChange={(e)=>this.onChangeHandler(e)} placeholder="mentor"  name="mentor" value={this.state.mentor}/>
             <input type="text" required className="landing__10_webinar-name" onChange={(e)=>this.onChangeHandler(e)} placeholder="date"  name="date" value={this.state.date}/>
             <input type="text" required className="landing__10_webinar-name" onChange={(e)=>this.onChangeHandler(e)} placeholder="day"  name="day" value={this.state.day}/>
-            <input type="text" required className="landing__10_webinar-name" onChange={(e)=>this.onChangeHandler(e)} placeholder="time"  name="time" value={this.state.time}/>           
+            <input type="text" required className="landing__10_webinar-name" onChange={(e)=>this.onChangeHandler(e)} placeholder="time"  name="time" value={this.state.time}/>
+            <input type="text" required className="landing__10_webinar-name" onChange={(e)=>this.onChangeHandler(e)} placeholder="nextbatch"  name="nextbatch" value={this.state.nextbatch}/>
             <input  className="landing__10_webinar-submit" type="submit" value="submit"/>
          </form>
          </div>

@@ -5,7 +5,6 @@ import {Helmet} from "react-helmet"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import $ from "jquery"
-import city from "../../../assets/images/city.svg"
 import live from "../../../assets/images/live.svg"
 import demo from "../../../assets/images/demo.svg"
 import book from "../../../assets/images/book.svg";
@@ -102,6 +101,7 @@ import fire from "../firebase_config"
         time:"12:30 PM",
         mentor:"Zehan Shah",
         topic:"Advance technology and government new laws applied in 2020 module ",
+        nextbatch:"Soon"
       },
         value:"",
         detail:false,
@@ -197,6 +197,8 @@ import fire from "../firebase_config"
 
     componentDidMount=()=>{
 
+
+      // console.log(this.props)
 
       // getting webinar details
 
@@ -407,10 +409,10 @@ import fire from "../firebase_config"
                 //city promotion
               }
 
-              <div className="landing__city">
+             {this.props.city?<div className="landing__city">
                   <div className="landing__city_msg">Serving at Your City</div>
-                  <img src={city} alt="city"/>
-              </div>
+                  <img src={this.props.city.img} alt={this.props.city.name}/>
+              </div>:null}
 
               {
                 // 3
@@ -487,7 +489,7 @@ import fire from "../firebase_config"
                     NEXT BATCH
                     <img src={live} alt=""/>
                     </div>
-                    <div className="landing__nextBD_date">10 MAY, 2021</div>
+                    <div className="landing__nextBD_date">{this.state.webinar.nextbatch}</div>
                     <Link to="/courses" className="landing__nextBD_btn">
                     <span>Join Today</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="81.992" height="14.514" viewBox="0 0 81.992 14.514">

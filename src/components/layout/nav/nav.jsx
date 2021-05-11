@@ -1,177 +1,330 @@
-import React, {Component} from "react";
-import {NavLink, withRouter} from "react-router-dom";
+import React, { Component } from "react";
+import { NavLink, withRouter } from "react-router-dom";
 import exim from "../../../assets/images/exim.svg";
 import cancel from "../../../assets/images/cancel.png";
 import play from "../../../assets/images/blackPlay.svg";
 import greenCall from "../../../assets/images/greenCall.svg";
 import vBar from "../../../assets/images/vBar.svg";
-import $ from "jquery"
+import $ from "jquery";
 
-  class Navigation extends Component{
+class Navigation extends Component {
+  state = {
+    selected: 0,
+  };
 
-     state={
-       selected:0
-     }
+  componentDidMount = () => {
+    let path = window.location.pathname + "";
+    if (path.indexOf("courses") !== -1) this.selectedNav(3);
+    else if (path.indexOf("pricing") !== -1) this.selectedNav(2);
+    else if (path.indexOf("blog") !== -1) this.selectedNav(4);
+    else if (path.indexOf("about") !== -1) this.selectedNav(5);
+    else this.selectedNav(1);
 
+    this.props.history.listen((location, action) => {
+      // console.log("on route change");
 
-    componentDidMount=()=>{
+      let path = window.location.pathname + "";
+      if (path.indexOf("courses") !== -1) this.selectedNav(3);
+      else if (path.indexOf("pricing") !== -1) this.selectedNav(2);
+      else if (path.indexOf("blog") !== -1) this.selectedNav(4);
+      else if (path.indexOf("about") !== -1) this.selectedNav(5);
+      else this.selectedNav(1);
+    });
+  };
 
-      
-
-
-
-
-      let path=window.location.pathname+"";
-      if(path.indexOf("courses")!==-1)
-      this.selectedNav(3);
-
-     else if(path.indexOf("pricing")!==-1)
-      this.selectedNav(2);
-
-      else  if(path.indexOf("blog")!==-1)
-      this.selectedNav(4);
-
-      else if(path.indexOf("about")!==-1)
-      this.selectedNav(5);
-
-      else
-      this.selectedNav(1);
-
-
-      this.props.history.listen((location, action) => {
-        // console.log("on route change");
-
-
-      let path=window.location.pathname+"";
-         if(path.indexOf("courses")!==-1)
-         this.selectedNav(3);
-
-        else if(path.indexOf("pricing")!==-1)
-         this.selectedNav(2);
-
-         else  if(path.indexOf("blog")!==-1)
-         this.selectedNav(4);
-
-         else if(path.indexOf("about")!==-1)
-         this.selectedNav(5);
-
-         else
-         this.selectedNav(1);
-        });
-
+  selectedNav = (nav) => {
+    switch (nav) {
+      case 1:
+        $(".nav__list_Hr").css("display", "none");
+        $(".nav__list_Hr-1").css("display", "block");
+        $(".nav__list_item").css("color", "#ADADAD");
+        $(".nav__list_item-1").css("color", "#0062FF");
+        break;
+      case 2:
+        $(".nav__list_Hr").css("display", "none");
+        $(".nav__list_Hr-2").css("display", "block");
+        $(".nav__list_item").css("color", "#ADADAD");
+        $(".nav__list_item-2").css("color", "#0062FF");
+        break;
+      case 3:
+        $(".nav__list_Hr").css("display", "none");
+        $(".nav__list_Hr-3").css("display", "block");
+        $(".nav__list_item").css("color", "#ADADAD");
+        $(".nav__list_item-3").css("color", "#0062FF");
+        break;
+      case 4:
+        $(".nav__list_Hr").css("display", "none");
+        $(".nav__list_Hr-4").css("display", "block");
+        $(".nav__list_item").css("color", "#ADADAD");
+        $(".nav__list_item-4").css("color", "#0062FF");
+        break;
+      case 5:
+        $(".nav__list_Hr").css("display", "none");
+        $(".nav__list_Hr-5").css("display", "block");
+        $(".nav__list_item").css("color", "#ADADAD");
+        $(".nav__list_item-5").css("color", "#0062FF");
+        break;
+      default:
+        $(".nav__list_Hr").css("display", "none");
+        $(".nav__list_Hr-1").css("display", "block");
+        $(".nav__list_item").css("color", "#ADADAD");
+        $(".nav__list_item-1").css("color", "#0062FF");
     }
 
-    selectedNav=(nav)=>{
-       switch (nav) {
-         case 1:
-           $(".nav__list_Hr").css("display","none")
-           $(".nav__list_Hr-1").css("display","block")
-           $(".nav__list_item").css("color","#ADADAD")
-           $(".nav__list_item-1").css("color","#0062FF")
-           break;
-         case 2:
-           $(".nav__list_Hr").css("display","none")
-           $(".nav__list_Hr-2").css("display","block")
-           $(".nav__list_item").css("color","#ADADAD")
-           $(".nav__list_item-2").css("color","#0062FF")
-             break;
-         case 3:
-           $(".nav__list_Hr").css("display","none")
-           $(".nav__list_Hr-3").css("display","block")
-           $(".nav__list_item").css("color","#ADADAD")
-           $(".nav__list_item-3").css("color","#0062FF")
-             break;
-         case 4:
-           $(".nav__list_Hr").css("display","none")
-           $(".nav__list_Hr-4").css("display","block")
-           $(".nav__list_item").css("color","#ADADAD")
-           $(".nav__list_item-4").css("color","#0062FF")
-             break;
-         case 5:
-           $(".nav__list_Hr").css("display","none")
-           $(".nav__list_Hr-5").css("display","block")
-           $(".nav__list_item").css("color","#ADADAD")
-           $(".nav__list_item-5").css("color","#0062FF")
-             break;
-         default:
-           $(".nav__list_Hr").css("display","none")
-           $(".nav__list_Hr-1").css("display","block")
-           $(".nav__list_item").css("color","#ADADAD")
-           $(".nav__list_item-1").css("color","#0062FF")
+    this.setState({selected:nav})
+  };
 
-       }
-    }
+  mobNavHndler = () => {
+    $(".nav__mob_wrapper").css({ opacity: "0", visibility: "hidden" });
+    $(".nav__mob_wrapper2").css({
+      animation: "none",
+      opacity: "0",
+      visibility: "hidden",
+    });
+    $(".nav__mob_wrapper3").css({
+      animation: "none",
+      opacity: "0",
+      visibility: "hidden",
+    });
+  };
 
-    mobNavHndler=()=>{
-      $(".nav__mob_wrapper").css({"opacity":"0","visibility":"hidden"});
-      $(".nav__mob_wrapper2").css({"animation":"none","opacity":"0","visibility":"hidden"});
-      $(".nav__mob_wrapper3").css({"animation":"none","opacity":"0","visibility":"hidden"})
-    }
+  render() {
+    return (
+      <div className="nav">
+        <NavLink to="/">
+          <img className="nav__compName" src={exim} alt="EXIM" />
+        </NavLink>
+        <div className="nav__mob">
+          <NavLink
+            exact
+            activeStyle={{ color: "#0062FF", fontWeight: "bold" }}
+            onClick={() => this.mobNavHndler()}
+            className="nav__mob_wrapper-link"
+            to="/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36.677"
+              height="41.464"
+              viewBox="0 0 36.677 41.464"
+            >
+              <g
+                id="Group_1"
+                data-name="Group 1"
+                transform="translate(0.5 0.5)"
+              >
+                <path
+                  id="Path_56"
+                  data-name="Path 56"
+                  d="M84.491,196.153H82.7c-2.9,0-5.267-2.01-5.267-4.482v-7.058c0-1.788-1.807-3.243-4.027-3.243H70.432c-2.221,0-4.027,1.455-4.027,3.243v7.058c0,2.472-2.363,4.482-5.267,4.482H59.347c-2.9,0-5.266-2.01-5.266-4.482v-19.5a4.125,4.125,0,0,1,1.334-2.986l12.574-12a5.908,5.908,0,0,1,7.864,0l12.569,11.995a4.123,4.123,0,0,1,1.336,2.986v19.5c0,2.472-2.363,4.482-5.267,4.482m-14.06-16.021h2.974c2.9,0,5.267,2.01,5.267,4.482v7.058c0,1.789,1.807,3.243,4.027,3.243h1.791c2.221,0,4.027-1.455,4.027-3.243v-19.5a2.9,2.9,0,0,0-.951-2.09L75,158.086a4.681,4.681,0,0,0-6.152,0l-12.573,12a2.894,2.894,0,0,0-.951,2.09v19.5c0,1.789,1.806,3.243,4.026,3.243h1.791c2.221,0,4.027-1.455,4.027-3.243v-7.058c0-2.472,2.363-4.482,5.267-4.482"
+                  transform="translate(-54.081 -155.69)"
+                  fill="#fff"
+                  stroke={this.state.selected===1||0?"#0062FF":"#000"}
+                  stroke-width="1"
+                />
+                <path
+                  id="Path_57"
+                  data-name="Path 57"
+                  d="M80.459,172.663H67.5a.62.62,0,0,1,0-1.239H80.459a.62.62,0,0,1,0,1.239"
+                  transform="translate(-55.843 -157.855)"
+                  fill="#fff"
+                  stroke={this.state.selected===1||0?"#0062FF":"#000"}
+                  stroke-width="1"
+                />
+              </g>
+            </svg>
 
-    render(){
+            <div className="nav__mob_a-name">Home</div>
+          </NavLink>
+          <NavLink
+            exact
+            activeStyle={{ color: "#0062FF", fontWeight: "bold" }}
+            onClick={() => this.mobNavHndler()}
+            className="nav__mob_wrapper-link"
+            to="/pricing"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="41.356" height="41.357" viewBox="0 0 41.356 41.357">
+  <g id="Group_2" data-name="Group 2" transform="translate(0.5 0.5)">
+    <path id="Path_37" data-name="Path 37" d="M164.124,195.384A20.179,20.179,0,1,1,184.3,175.205a20.2,20.2,0,0,1-20.178,20.179m0-39.118a18.939,18.939,0,1,0,18.939,18.939,18.961,18.961,0,0,0-18.939-18.939" transform="translate(-143.946 -155.027)" fill="#fff" stroke={this.state.selected===2||0?"#0062FF":"#000"} stroke-width="1"/>
+    <path id="Path_38" data-name="Path 38" d="M164.892,160.607a15.366,15.366,0,1,0,15.367,15.367,15.367,15.367,0,0,0-15.367-15.367m1.089,24.841v3.325h-2.015v-3.231a9.274,9.274,0,0,1-4.892-1.407l.768-2.141a8.52,8.52,0,0,0,4.6,1.375c2.273,0,3.808-1.313,3.808-3.132,0-1.761-1.249-2.847-3.615-3.807-3.262-1.278-5.276-2.75-5.276-5.531,0-2.656,1.886-4.67,4.829-5.149v-3.23h1.983v3.1a8.5,8.5,0,0,1,4.158,1.119l-.8,2.111a7.74,7.74,0,0,0-4.031-1.089c-2.463,0-3.391,1.472-3.391,2.752,0,1.662,1.184,2.495,3.969,3.646,3.292,1.342,4.954,3,4.954,5.85,0,2.528-1.757,4.892-5.052,5.437" transform="translate(-144.714 -155.795)" fill="#f3f1f1" stroke={this.state.selected===2||0?"#0062FF":"#000"} stroke-width="1"/>
+  </g>
+</svg>
 
 
+            <div className="nav__mob_a-name">Pricing</div>
+          </NavLink>
+          <NavLink
+            exact
+            activeStyle={{ color: "#0062FF", fontWeight: "bold" }}
+            onClick={() => this.mobNavHndler()}
+            className="nav__mob_wrapper-link"
+            to="/courses"
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="38.744" height="43.31" viewBox="0 0 38.744 43.31">
+  <g id="Group_3" data-name="Group 3" transform="translate(0.25 0.25)">
+    <path id="Path_19" data-name="Path 19" d="M284.746,162.782a.476.476,0,0,1-.1.01l-6.99-.034a.467.467,0,0,1-.406-.241l-.016-.028a.464.464,0,0,1-.023-.4l2.488-6.13a.466.466,0,0,1,.434-.291l2.1.01a.465.465,0,0,1,.431.295l2.428,6.154a.461.461,0,0,1-.027.4l-.015.027a.47.47,0,0,1-.309.228m-6.424-.952,5.666.028-2.071-5.248-1.473-.008Z" transform="translate(-247.036 -153.273)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_20" data-name="Path 20" d="M284.626,162.9l-6.991-.034a.59.59,0,0,1-.514-.3l-.016-.028a.583.583,0,0,1-.029-.506l2.488-6.131a.588.588,0,0,1,.548-.368l2.1.011a.588.588,0,0,1,.546.373l2.428,6.155a.582.582,0,0,1-.034.505l-.015.028a.592.592,0,0,1-.39.287.627.627,0,0,1-.127.013m-4.514-7.123a.341.341,0,0,0-.318.214l-2.488,6.13a.342.342,0,0,0,.017.294l.016.028a.342.342,0,0,0,.3.176l6.989.034a.354.354,0,0,0,.074-.008.34.34,0,0,0,.226-.166l.016-.028a.34.34,0,0,0,.021-.293L282.533,156a.341.341,0,0,0-.317-.216Zm4.038,6.189-6.032-.029,2.222-5.474,1.641.008Zm-5.664-.275,5.3.025-1.974-5-1.3-.006Z" transform="translate(-247.016 -153.253)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_21" data-name="Path 21" d="M282.746,156.21a.488.488,0,0,1-.1.011l-2.1-.01a.467.467,0,0,1-.429-.642l.824-2.027a.7.7,0,0,1,1.342.007l.8,2.035a.465.465,0,0,1-.335.626m-1.512-.928.727,0-.359-.909Z" transform="translate(-247.435 -152.911)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_22" data-name="Path 22" d="M282.626,156.325l-2.1-.01a.588.588,0,0,1-.543-.811l.823-2.029a.855.855,0,0,1,.785-.584h0a.852.852,0,0,1,.783.592l.8,2.035a.589.589,0,0,1-.424.793h0a.563.563,0,0,1-.126.014m-1.04-3.187a.616.616,0,0,0-.555.43l-.824,2.028a.343.343,0,0,0,.316.47l2.1.011a.371.371,0,0,0,.075-.009.343.343,0,0,0,.246-.46l-.8-2.035a.617.617,0,0,0-.554-.436Zm.539,2.253-1.094,0,.554-1.363Zm-.726-.252.361,0-.178-.452Z" transform="translate(-247.415 -152.891)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_23" data-name="Path 23" d="M284.64,190.586a.489.489,0,0,1-.1.01l-7.047-.034a.465.465,0,0,1-.464-.468l.128-26.612a.468.468,0,0,1,.139-.329.461.461,0,0,1,.329-.135l7.047.034a.467.467,0,0,1,.464.468l-.128,26.613a.467.467,0,0,1-.367.453m-6.678-.953,6.116.029.122-25.681-6.114-.029Z" transform="translate(-247.015 -154.285)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_24" data-name="Path 24" d="M284.521,190.7h0l-7.047-.034a.589.589,0,0,1-.587-.592l.128-26.613a.6.6,0,0,1,.174-.417.581.581,0,0,1,.419-.17l7.047.034a.59.59,0,0,1,.586.592l-.128,26.613a.6.6,0,0,1-.465.574.669.669,0,0,1-.125.012M277.6,163.121a.338.338,0,0,0-.241.1.343.343,0,0,0-.1.241l-.128,26.613a.342.342,0,0,0,.1.242.338.338,0,0,0,.242.1l7.046.034a.271.271,0,0,0,.075-.008.345.345,0,0,0,.27-.332l.128-26.613a.342.342,0,0,0-.34-.343l-7.048-.035Zm6.578,26.645-6.363-.03v-.123l.123-25.805,6.364.03v.123Zm-6.114-.277,5.868.028.122-25.433-5.867-.028Z" transform="translate(-246.995 -154.265)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_25" data-name="Path 25" d="M282.04,201.4a5.074,5.074,0,0,1-1.087.107,3.755,3.755,0,0,1-2.8-1.08,4.67,4.67,0,0,1-1.14-3.1l0-.884a.459.459,0,0,1,.138-.329.468.468,0,0,1,.33-.135l7.047.034a.467.467,0,0,1,.464.468l-.006,1.068a4.436,4.436,0,0,1-1.166,2.9,3.522,3.522,0,0,1-1.785.949m-4.093-4.484,0,.429a3.785,3.785,0,0,0,.883,2.44,2.863,2.863,0,0,0,2.129.79,2.983,2.983,0,0,0,2.21-.784,3.5,3.5,0,0,0,.893-2.24v0l0-.6Z" transform="translate(-247.013 -158.821)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_26" data-name="Path 26" d="M280.958,201.611h-.026a3.87,3.87,0,0,1-2.888-1.118,4.808,4.808,0,0,1-1.175-3.187l0-.88a.583.583,0,0,1,.174-.417.629.629,0,0,1,.417-.171l7.047.034a.593.593,0,0,1,.588.592l-.005,1.068a4.6,4.6,0,0,1-1.2,2.986,3.643,3.643,0,0,1-1.846.982,5.137,5.137,0,0,1-1.088.11m-3.494-5.526a.343.343,0,0,0-.241.1.337.337,0,0,0-.1.242l0,.884a4.544,4.544,0,0,0,1.1,3.011,3.636,3.636,0,0,0,2.711,1.041,5.105,5.105,0,0,0,1.061-.1,3.411,3.411,0,0,0,1.724-.916,4.331,4.331,0,0,0,1.13-2.812l.005-1.068a.342.342,0,0,0-.341-.343l-7.047-.035Zm3.5,4.594h-.025a2.984,2.984,0,0,1-2.218-.828,3.884,3.884,0,0,1-.918-2.528l0-.552,6.363.03,0,.73v.009a3.62,3.62,0,0,1-.929,2.319,3.088,3.088,0,0,1-2.273.819m-2.911-3.659,0,.305a3.627,3.627,0,0,0,.848,2.353,2.75,2.75,0,0,0,2.041.753h.024a2.857,2.857,0,0,0,2.1-.747,3.38,3.38,0,0,0,.856-2.152l0-.485Z" transform="translate(-246.993 -158.801)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_27" data-name="Path 27" d="M282.626,190.579a.437.437,0,0,1-.1.011l-2.379-.012a.465.465,0,0,1-.464-.468l.128-26.587a.469.469,0,0,1,.468-.465l2.38.012a.465.465,0,0,1,.463.468l-.128,26.587a.466.466,0,0,1-.366.453m-2.01-.931,1.447.007L282.186,164l-1.447-.007Z" transform="translate(-247.38 -154.29)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_28" data-name="Path 28" d="M282.508,190.694h0l-2.378-.012a.587.587,0,0,1-.417-.174.593.593,0,0,1-.171-.417l.128-26.587a.591.591,0,0,1,.591-.587h0l2.379.011a.587.587,0,0,1,.586.592l-.127,26.587a.594.594,0,0,1-.465.574.609.609,0,0,1-.125.014m-2.252-27.531a.343.343,0,0,0-.343.341l-.128,26.587a.343.343,0,0,0,.341.343l2.378.011a.282.282,0,0,0,.075-.008.343.343,0,0,0,.269-.333l.128-26.587a.346.346,0,0,0-.1-.243.341.341,0,0,0-.241-.1l-2.379-.011Zm1.911,26.6-1.7-.008v-.123l.122-25.779,1.7.007v.124Zm-1.447-.254,1.2.005.122-25.408-1.2-.005Z" transform="translate(-247.361 -154.271)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_29" data-name="Path 29" d="M284.629,196.646a.486.486,0,0,1-.1.01l-7.048-.034a.465.465,0,0,1-.463-.468l.009-1.814a.466.466,0,0,1,.468-.463l7.047.034a.459.459,0,0,1,.329.138.466.466,0,0,1,.135.329L285,196.193a.465.465,0,0,1-.368.454m-6.677-.953,6.115.029.005-.881-6.116-.029Z" transform="translate(-247.014 -158.531)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_30" data-name="Path 30" d="M284.51,196.761l-7.047-.034a.589.589,0,0,1-.588-.592l.009-1.814a.59.59,0,0,1,.589-.587h0l7.047.034a.592.592,0,0,1,.587.592l-.009,1.814a.591.591,0,0,1-.466.573.615.615,0,0,1-.127.013m-7.037-2.779a.338.338,0,0,0-.24.1.345.345,0,0,0-.1.241l-.009,1.814a.342.342,0,0,0,.1.242.346.346,0,0,0,.242.1l7.047.034a.342.342,0,0,0,.074-.008.341.341,0,0,0,.27-.332l.009-1.814a.346.346,0,0,0-.1-.242.336.336,0,0,0-.241-.1l-7.047-.034Zm6.7,1.846-6.364-.03.006-1.13,6.363.03Zm-6.114-.278,5.868.028,0-.634-5.869-.028Z" transform="translate(-246.994 -158.511)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_31" data-name="Path 31" d="M242.37,160.561v30.125a4.356,4.356,0,0,0,4.442,4.254h19.594a4.209,4.209,0,0,0,4.442-3.917V163.767a3.75,3.75,0,0,0-1.71-3.088v-.118a4.357,4.357,0,0,0-4.443-4.255H246.812a4.356,4.356,0,0,0-4.442,4.255m1.42,0a2.936,2.936,0,0,1,3.022-2.834H264.7a2.936,2.936,0,0,1,3.023,2.834v.514a.71.71,0,0,0,.365.621,2.414,2.414,0,0,1,1.345,2.071v27.256a2.8,2.8,0,0,1-3.022,2.5H246.812a2.936,2.936,0,0,1-3.022-2.834Z" transform="translate(-242.246 -153.361)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_32" data-name="Path 32" d="M266.387,195.045H246.792a4.48,4.48,0,0,1-4.566-4.378V160.542a4.481,4.481,0,0,1,4.566-4.379h17.883a4.481,4.481,0,0,1,4.566,4.379v.053a3.851,3.851,0,0,1,1.711,3.153V191a4.332,4.332,0,0,1-4.566,4.04m-19.594-38.633a4.232,4.232,0,0,0-4.319,4.131v30.124a4.232,4.232,0,0,0,4.319,4.131h19.594A4.086,4.086,0,0,0,270.706,191V163.749a3.618,3.618,0,0,0-1.658-2.986l-.054-.037v-.183a4.232,4.232,0,0,0-4.318-4.131Zm19.594,37.213H246.792a3.059,3.059,0,0,1-3.146-2.958V160.542a3.059,3.059,0,0,1,3.146-2.958h17.883a3.06,3.06,0,0,1,3.146,2.958v.513a.588.588,0,0,0,.3.513,2.535,2.535,0,0,1,1.41,2.18V191a2.923,2.923,0,0,1-3.146,2.62m-19.594-35.793a2.813,2.813,0,0,0-2.9,2.71v30.124a2.813,2.813,0,0,0,2.9,2.711h19.594a2.678,2.678,0,0,0,2.9-2.372V163.749A2.3,2.3,0,0,0,268,161.785a.834.834,0,0,1-.43-.73v-.513a2.812,2.812,0,0,0-2.9-2.71Z" transform="translate(-242.226 -153.341)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_33" data-name="Path 33" d="M247.793,163.079a.708.708,0,0,0,.452.162h3.488v11.885a.709.709,0,0,0,.431.653.7.7,0,0,0,.279.058.709.709,0,0,0,.492-.2l2.941-2.808,3.087,2.819a.71.71,0,0,0,1.189-.525V163.241h6.909a.71.71,0,0,0,.653-.43,2.948,2.948,0,0,0-.022-2.358,2.551,2.551,0,0,0-1.89-1.263.686.686,0,0,0-.14-.014H248.245a.754.754,0,0,0-.124.01c-.147.026-1.44.284-1.714,1.324-.308,1.173.968,2.223,1.387,2.568m.524-2.482h17.27a.977.977,0,0,1,.931,1.223h-7.077a.711.711,0,0,0-.71.711v10.986l-2.388-2.18a.714.714,0,0,0-.479-.186.7.7,0,0,0-.49.2l-2.221,2.119V162.531a.71.71,0,0,0-.71-.711h-3.938c-.74-.653-.726-.944-.726-.947a1.009,1.009,0,0,1,.537-.276" transform="translate(-242.795 -153.756)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_34" data-name="Path 34" d="M252.424,175.942a.832.832,0,0,1-.834-.835V163.346h-3.365a.833.833,0,0,1-.53-.191l.078-.1-.08.095c-.434-.358-1.754-1.446-1.426-2.694.293-1.116,1.658-1.387,1.813-1.414a.821.821,0,0,1,.145-.013h17.418a.862.862,0,0,1,.163.016,2.674,2.674,0,0,1,1.977,1.326,3.077,3.077,0,0,1,.026,2.465.832.832,0,0,1-.767.505h-6.784v11.761a.834.834,0,0,1-1.4.617l-3-2.741L253,175.711a.828.828,0,0,1-.576.231m-4.572-12.978a.59.59,0,0,0,.373.135h3.613v12.009a.586.586,0,0,0,.355.54.6.6,0,0,0,.636-.116l3.024-2.888,3.173,2.9a.587.587,0,0,0,.982-.434V163.1h7.033a.586.586,0,0,0,.539-.355,2.817,2.817,0,0,0-.018-2.252,2.43,2.43,0,0,0-1.8-1.2.562.562,0,0,0-.115-.012H248.225a.591.591,0,0,0-.1.009c-.138.024-1.361.266-1.616,1.233-.287,1.094.941,2.108,1.344,2.44l-.078.1Zm10.984,10.814-2.6-2.37a.6.6,0,0,0-.8.009l-2.43,2.319V162.511a.587.587,0,0,0-.586-.586H248.44l-.035-.031c-.8-.708-.772-1.027-.766-1.061.066-.177.414-.324.63-.376l.029,0,17.3,0a1.3,1.3,0,0,1,.927.575,1.338,1.338,0,0,1,.1.786l-.016.107h-7.185a.587.587,0,0,0-.586.586Zm-2.991-2.771a.831.831,0,0,1,.562.218l2.181,1.991V162.511a.835.835,0,0,1,.834-.834h6.965a.994.994,0,0,0-.085-.529,1.066,1.066,0,0,0-.749-.447H248.313a1.212,1.212,0,0,0-.424.19,2.144,2.144,0,0,0,.645.786h3.89a.835.835,0,0,1,.834.834v10.646l2.011-1.919a.83.83,0,0,1,.576-.231" transform="translate(-242.775 -153.736)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_35" data-name="Path 35" d="M255.586,169.592l-.167.972a.356.356,0,0,0,.141.348.352.352,0,0,0,.21.068.357.357,0,0,0,.166-.041l.873-.459.874.459a.355.355,0,0,0,.516-.374l-.167-.972.707-.689a.355.355,0,0,0-.2-.605l-.976-.142-.436-.885a.355.355,0,0,0-.637,0l-.436.885-.976.142a.354.354,0,0,0-.2.605Zm.754-.761a.355.355,0,0,0,.267-.194l.2-.406.2.406a.355.355,0,0,0,.267.194l.449.066-.325.316a.36.36,0,0,0-.1.316l.077.447-.4-.211a.357.357,0,0,0-.33,0l-.4.211.078-.447a.359.359,0,0,0-.1-.316l-.325-.316Z" transform="translate(-243.952 -154.842)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_36" data-name="Path 36" d="M257.828,171.084a.47.47,0,0,1-.223-.055l-.816-.429-.816.429a.488.488,0,0,1-.505-.036.478.478,0,0,1-.19-.469l.156-.908-.66-.642a.478.478,0,0,1,.266-.817l.912-.134.408-.826a.479.479,0,0,1,.86,0l.407.826.912.134a.478.478,0,0,1,.265.817l-.66.642.156.908a.479.479,0,0,1-.472.561m-1.039-.764.931.49a.228.228,0,0,0,.243-.018.231.231,0,0,0,.092-.227l-.178-1.037.753-.733a.231.231,0,0,0-.129-.394l-1.041-.152-.465-.943a.241.241,0,0,0-.416,0l-.465.943-1.041.152a.231.231,0,0,0-.128.394l.754.733-.179,1.037a.231.231,0,0,0,.336.243Zm-.732-.138.121-.694a.234.234,0,0,0-.067-.205l-.5-.492.7-.1a.23.23,0,0,0,.173-.127l.312-.632.312.632a.232.232,0,0,0,.173.127l.7.1-.5.492a.23.23,0,0,0-.067.2l.12.7-.624-.329a.238.238,0,0,0-.216,0Zm.732-.6a.475.475,0,0,1,.223.054l.179.095-.035-.2a.482.482,0,0,1,.137-.423l.146-.141-.2-.029a.478.478,0,0,1-.36-.262l-.09-.182-.09.182a.478.478,0,0,1-.36.262l-.2.029.145.141a.481.481,0,0,1,.138.424l-.035.2.179-.095a.472.472,0,0,1,.223-.054" transform="translate(-243.933 -154.823)" fill="#fff" stroke={this.state.selected===3||0?"#0062FF":"#000"} stroke-width="0.5"/>
+  </g>
+</svg>
 
-      return (
-          <div className="nav">
-              <NavLink to ="/"><img className="nav__compName" src={exim} alt="EXIM"/></NavLink>
-                <div className="nav__mob">
-                        <NavLink exact activeStyle={{color:"#0062FF",fontWeight:"bold"}} onClick={()=>this.mobNavHndler()} className="nav__mob_wrapper-link" to="/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="43.174" height="45.383" viewBox="0 0 43.174 45.383">
-                            <path id="Path_5162" data-name="Path 5162" d="M36.316,45.59V23.985a2.909,2.909,0,0,0-2.906-2.9H22.28a2.909,2.909,0,0,0-2.906,2.9V45.59H9.3a2.548,2.548,0,0,1-2.545-2.545V17.579a2.567,2.567,0,0,1,1.023-2.042L26.324,1.712a2.544,2.544,0,0,1,3.043,0L47.909,15.538a2.565,2.565,0,0,1,1.023,2.041V43.045a2.548,2.548,0,0,1-2.545,2.545Z" transform="translate(-6.258 -0.707)" fill="#fff" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            </svg>
-                            <div className="nav__mob_a-name">Home</div>
-                        </NavLink>
-                        <NavLink exact activeStyle={{color:"#0062FF",fontWeight:"bold"}} onClick={()=>this.mobNavHndler()} className="nav__mob_wrapper-link" to="/pricing">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28.945" height="42.362" viewBox="0 0 28.945 42.362">
-                            <path id="Path_5171" data-name="Path 5171" d="M126.306,6.608v5.778h-8.55a8.45,8.45,0,0,1,1.227,1.623,9.561,9.561,0,0,1,.99,2.573h6.333v5.067h-5.858a8.2,8.2,0,0,1-.871,3.721,10.413,10.413,0,0,1-2.3,3.048,11.038,11.038,0,0,1-3.4,2.1,12.373,12.373,0,0,1-4.2.87l10.767,11.875-5.938,4.512-9.183-11.8q-1.109-1.345-2.019-2.415t-1.7-1.939l-1.663-1.742,1.979-4.354a11.293,11.293,0,0,0,1.662.475,9.739,9.739,0,0,0,1.9.159,8.689,8.689,0,0,0,5.186-1.307,4.92,4.92,0,0,0,2.1-3.206H98.361V16.582h14.17a6.918,6.918,0,0,0-1.028-2.375,13.326,13.326,0,0,0-1.5-1.82H98.361V6.608Z" transform="translate(-97.861 -6.108)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            </svg>
-                            <div className="nav__mob_a-name">Pricing</div>
-                        </NavLink>
-                        <NavLink exact activeStyle={{color:"#0062FF",fontWeight:"bold"}} onClick={()=>this.mobNavHndler()} className="nav__mob_wrapper-link" to="/courses">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="62.576" height="34.962" viewBox="0 0 62.576 34.962">
-                            <g id="Group_1451" data-name="Group 1451" transform="translate(0.5 0.501)">
-                            <path id="Path_5166" data-name="Path 5166" d="M198.67,20.014l27.169,1.28v8.632" transform="translate(-168.838 -10.05)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            <path id="Path_5167" data-name="Path 5167" d="M223.966,17.585a.277.277,0,0,1-.007.531l-5.227,1.5-9.91,2.836L193.755,26.76a1.7,1.7,0,0,1-.927,0l-14.221-4.071-.651-.186-15.125-4.329a.341.341,0,0,1-.009-.654l30.263-9.528a.691.691,0,0,1,.413,0Z" transform="translate(-162.583 -7.961)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            <path id="Path_5168" data-name="Path 5168" d="M233.614,33.962a2.147,2.147,0,0,1-1.982,1.857,3.455,3.455,0,0,1-.648.06,3.332,3.332,0,0,1-.637-.06,2.145,2.145,0,0,1-1.991-1.857c0-1.06,1.176-1.92,2.627-1.92S233.614,32.9,233.614,33.962Z" transform="translate(-173.983 -12.134)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            <path id="Path_5169" data-name="Path 5169" d="M214.3,38.039l-18.238,6.878a1.056,1.056,0,0,1-.75,0L177.106,38.05a1.07,1.07,0,0,1-.687-1.033c.167-5.919,2.236-9.364,3.469-10.9a1.058,1.058,0,0,1,1.118-.357L195.4,29.875a1.072,1.072,0,0,0,.584,0L210.568,25.7a1.069,1.069,0,0,1,1.122.354c3.022,3.719,3.3,9.059,3.3,10.995A1.058,1.058,0,0,1,214.3,38.039Z" transform="translate(-164.981 -11.028)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            <path id="Path_5170" data-name="Path 5170" d="M232.6,45.186l-3.068.108a.871.871,0,0,1-.88-1.065l1.739-7.62a3.332,3.332,0,0,0,.637.06,3.446,3.446,0,0,0,.647-.06l1.743,7.509A.87.87,0,0,1,232.6,45.186Z" transform="translate(-174.031 -12.926)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            </g>
-                            </svg>
-                            <div className="nav__mob_a-name">Courses</div>
-                        </NavLink>
-                        <NavLink activeStyle={{color:"#0062FF",fontWeight:"bold"}} onClick={()=>this.mobNavHndler()} className="nav__mob_wrapper-link" to="/blogs">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="51.582" height="45.698" viewBox="0 0 51.582 45.698">
-                            <g id="Group_1452" data-name="Group 1452" transform="translate(0.543 0.5)">
-                            <path id="Path_5163" data-name="Path 5163" d="M287.316,24.976a3.605,3.605,0,0,1,0,3.6,3.606,3.606,0,1,1,0-3.6Z" transform="translate(-258.947 -4.43)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            <path id="Path_5164" data-name="Path 5164" d="M304.42,21.047,293.6,2.3A3.609,3.609,0,0,0,290.481.5H268.832a3.611,3.611,0,0,0-3.122,1.8L254.893,21.047a3.6,3.6,0,0,0,0,3.6l4.038,7L265.71,43.4a3.61,3.61,0,0,0,3.122,1.8h21.649a3.608,3.608,0,0,0,3.122-1.8l7.862-13.621,2.955-5.123A3.6,3.6,0,0,0,304.42,21.047Zm-8.009,3.785L289.75,36.366a3.978,3.978,0,0,1-3.432,1.983H273a3.977,3.977,0,0,1-3.432-1.983L262.9,24.832a3.973,3.973,0,0,1,0-3.966l6.661-11.535A3.977,3.977,0,0,1,273,7.35h13.323a3.978,3.978,0,0,1,3.432,1.982l6.661,11.535A3.977,3.977,0,0,1,296.411,24.832Z" transform="translate(-254.409 -0.5)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            <path id="Path_5165" data-name="Path 5165" d="M287.8,26.778a3.6,3.6,0,0,1-3.6,3.6,3.606,3.606,0,0,1-3.122-1.8,3.6,3.6,0,0,1,3.122-5.407,3.6,3.6,0,0,1,3.122,1.8A3.57,3.57,0,0,1,287.8,26.778Z" transform="translate(-258.947 -4.43)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            </g>
-                            </svg>
-                            <div className="nav__mob_a-name">Blogs</div>
-                        </NavLink>
-                        <NavLink exact activeStyle={{color:"#0062FF",fontWeight:"bold"}} onClick={()=>this.mobNavHndler()} className="nav__mob_wrapper-link" to="/about">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="33.859" height="45.986" viewBox="0 0 33.859 45.986">
-                            <g id="Group_1453" data-name="Group 1453" transform="translate(0.5 0.5)">
-                            <path id="Path_5172" data-name="Path 5172" d="M346.666,20.092a9.279,9.279,0,1,1,9.28-9.28A9.291,9.291,0,0,1,346.666,20.092Z" transform="translate(-330.237 -1.533)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            <path id="Path_5173" data-name="Path 5173" d="M328.738,51.643V36.126a7.933,7.933,0,0,1,7.91-7.91h17.04a7.933,7.933,0,0,1,7.91,7.91V51.643" transform="translate(-328.738 -6.158)" fill="none" stroke="#8b8b8b" stroke-miterlimit="10" stroke-width="1"/>
-                            </g>
-                            </svg>
-                            <div className="nav__mob_a-name">About Us</div>
-                        </NavLink>
-                </div>
-                <ul className="nav__list">
-                <NavLink onClick={()=>this.selectedNav(1)} className="nav__link" to="/"><li className="nav__list_item nav__list_item-1">Home</li><hr className="nav__list_Hr nav__list_Hr-1"/></NavLink>
-                <NavLink onClick={()=>this.selectedNav(3)} className="nav__link" to="/courses"><li className="nav__list_item nav__list_item-3">Courses</li><hr className="nav__list_Hr nav__list_Hr-3"/></NavLink>
-                <NavLink onClick={()=>this.selectedNav(2)} className="nav__link" to="/pricing"><li className="nav__list_item nav__list_item-2">Pricing</li><hr className="nav__list_Hr nav__list_Hr-2"/></NavLink>
-                <NavLink onClick={()=>this.selectedNav(4)} className="nav__link" to="/blogs"><li className="nav__list_item nav__list_item-4">Blogs</li><hr className="nav__list_Hr nav__list_Hr-4"/></NavLink>
-                <NavLink onClick={()=>this.selectedNav(5)} className="nav__link" to="/about"><li className="nav__list_item nav__list_item-5">About Us</li><hr className="nav__list_Hr nav__list_Hr-5"/></NavLink>
-                <a style={{opacity:"0"}} href="tel://+918517885555" className="about__1_text-call nav__list_a" id="nav__list_a"><img className="about__1_text-call--img1" src={greenCall} alt=""/> +91  8517885555</a>
-              </ul>
-          </div>
-      )
-    }
+
+            <div className="nav__mob_a-name">Courses</div>
+          </NavLink>
+          <NavLink
+            activeStyle={{ color: "#0062FF", fontWeight: "bold" }}
+            onClick={() => this.mobNavHndler()}
+            className="nav__mob_wrapper-link"
+            to="/blogs"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="51.582"
+              height="45.698"
+              viewBox="0 0 51.582 45.698"
+            >
+              <g
+                id="Group_1452"
+                data-name="Group 1452"
+                transform="translate(0.543 0.5)"
+              >
+                <path
+                  id="Path_5163"
+                  data-name="Path 5163"
+                  d="M287.316,24.976a3.605,3.605,0,0,1,0,3.6,3.606,3.606,0,1,1,0-3.6Z"
+                  transform="translate(-258.947 -4.43)"
+                  fill="none"
+                  stroke={this.state.selected===4||0?"#0062FF":"#000"}
+                  stroke-miterlimit="10"
+                  stroke-width="1"
+                />
+                <path
+                  id="Path_5164"
+                  data-name="Path 5164"
+                  d="M304.42,21.047,293.6,2.3A3.609,3.609,0,0,0,290.481.5H268.832a3.611,3.611,0,0,0-3.122,1.8L254.893,21.047a3.6,3.6,0,0,0,0,3.6l4.038,7L265.71,43.4a3.61,3.61,0,0,0,3.122,1.8h21.649a3.608,3.608,0,0,0,3.122-1.8l7.862-13.621,2.955-5.123A3.6,3.6,0,0,0,304.42,21.047Zm-8.009,3.785L289.75,36.366a3.978,3.978,0,0,1-3.432,1.983H273a3.977,3.977,0,0,1-3.432-1.983L262.9,24.832a3.973,3.973,0,0,1,0-3.966l6.661-11.535A3.977,3.977,0,0,1,273,7.35h13.323a3.978,3.978,0,0,1,3.432,1.982l6.661,11.535A3.977,3.977,0,0,1,296.411,24.832Z"
+                  transform="translate(-254.409 -0.5)"
+                  fill="none"
+                  stroke={this.state.selected===4||0?"#0062FF":"#000"}
+                  stroke-miterlimit="10"
+                  stroke-width="1"
+                />
+                <path
+                  id="Path_5165"
+                  data-name="Path 5165"
+                  d="M287.8,26.778a3.6,3.6,0,0,1-3.6,3.6,3.606,3.606,0,0,1-3.122-1.8,3.6,3.6,0,0,1,3.122-5.407,3.6,3.6,0,0,1,3.122,1.8A3.57,3.57,0,0,1,287.8,26.778Z"
+                  transform="translate(-258.947 -4.43)"
+                  fill="none"
+                  stroke={this.state.selected===4||0?"#0062FF":"#000"}
+                  stroke-miterlimit="10"
+                  stroke-width="1"
+                />
+              </g>
+            </svg>
+            <div className="nav__mob_a-name">Blogs</div>
+          </NavLink>
+          <NavLink
+            exact
+            activeStyle={{ color: "#0062FF", fontWeight: "bold" }}
+            onClick={() => this.mobNavHndler()}
+            className="nav__mob_wrapper-link"
+            to="/about"
+          >
+        <svg xmlns="http://www.w3.org/2000/svg" width="37.467" height="42.866" viewBox="0 0 37.467 42.866">
+  <g id="Group_4" data-name="Group 4" transform="translate(0.251 0.251)">
+    <path id="Path_1" data-name="Path 1" d="M368.119,195.149a.5.5,0,0,1-.43.557l-7.528,1.149a.5.5,0,0,1-.576-.4l-.106-.69a.5.5,0,0,1,.43-.558l7.528-1.148a.5.5,0,0,1,.577.4Z" transform="translate(-342.568 -158.72)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_2" data-name="Path 2" d="M360.061,196.965a.619.619,0,0,1-.619-.516l-.105-.69a.623.623,0,0,1,.534-.7l7.528-1.147a.623.623,0,0,1,.718.509l.1.689a.6.6,0,0,1-.12.458.643.643,0,0,1-.414.241l-7.527,1.147a.649.649,0,0,1-.1.008m7.435-2.811a.372.372,0,0,0-.061,0l-7.527,1.147a.375.375,0,0,0-.327.417l.1.69a.376.376,0,0,0,.436.3l7.528-1.147a.4.4,0,0,0,.255-.148.35.35,0,0,0,.071-.269l-.1-.689a.371.371,0,0,0-.375-.305" transform="translate(-342.548 -158.7)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_3" data-name="Path 3" d="M367.843,198.05a.454.454,0,0,1-.333.543l-6.066.924a.454.454,0,0,1-.479-.419l-.105-.691a.452.452,0,0,1,.333-.542l6.066-.924a.453.453,0,0,1,.479.419Z" transform="translate(-342.758 -159.117)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_4" data-name="Path 4" d="M361.37,199.627a.516.516,0,0,1-.337-.132.662.662,0,0,1-.211-.4l-.105-.69a.578.578,0,0,1,.437-.685l6.066-.924a.5.5,0,0,1,.371.1.655.655,0,0,1,.25.427l.1.69a.655.655,0,0,1-.084.442.5.5,0,0,1-.353.242l-6.066.924a.535.535,0,0,1-.072.006m5.921-2.585-.034,0-6.066.924a.332.332,0,0,0-.229.4l.105.69a.41.41,0,0,0,.13.247.255.255,0,0,0,.209.068l6.066-.924a.258.258,0,0,0,.178-.128.411.411,0,0,0,.051-.274l-.105-.69a.4.4,0,0,0-.152-.265.258.258,0,0,0-.153-.053" transform="translate(-342.738 -159.098)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_5" data-name="Path 5" d="M366.53,199.886a1.632,1.632,0,0,1-3.227.492" transform="translate(-343.095 -159.523)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_6" data-name="Path 6" d="M364.893,201.885a1.757,1.757,0,0,1-1.733-1.492l.245-.037a1.508,1.508,0,0,0,2.982-.455l.246-.037a1.754,1.754,0,0,1-1.471,2,1.775,1.775,0,0,1-.269.021" transform="translate(-343.075 -159.52)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_7" data-name="Path 7" d="M366.715,188.386l-9.223,1.406a1.2,1.2,0,0,1-1.247-1.146,1.559,1.559,0,0,1,.1-.86c-.573-2.213-2.322-3.938-3.609-5.208a14.523,14.523,0,0,1-1.257-1.335,11.446,11.446,0,0,1-2.234-9.878A11.1,11.1,0,0,1,351,167.52a10.776,10.776,0,0,1,3.037-2.88,10.567,10.567,0,0,1,8.334-1.27,10.781,10.781,0,0,1,3.758,1.844,11.138,11.138,0,0,1,2.819,3.149,11.353,11.353,0,0,1,1.49,4.151,11.5,11.5,0,0,1,.081,2.817,11.311,11.311,0,0,1-.388,2.048l.039.009-.238.612c-.053.153-.111.305-.17.452a14.051,14.051,0,0,1-.8,1.639c-.834,1.552-1.963,3.654-1.9,5.909a1.51,1.51,0,0,1,.429.934c.138.9-.289,1.381-.773,1.454m-9.282.257,8.935-1.362a1,1,0,0,0-.011-.177,1.078,1.078,0,0,0-.054-.216l-.337-.053-.034-.453c-.2-2.7,1.084-5.09,2.022-6.834a13.763,13.763,0,0,0,.74-1.5l.005-.016c.055-.136.108-.278.158-.419l0-.007a10.3,10.3,0,0,0-.89-8.653,9.957,9.957,0,0,0-2.531-2.826,9.627,9.627,0,0,0-3.359-1.65,9.418,9.418,0,0,0-7.429,1.132,9.624,9.624,0,0,0-2.716,2.575,9.98,9.98,0,0,0-1.574,3.452,10.3,10.3,0,0,0,2.013,8.89l.011.014a13.85,13.85,0,0,0,1.157,1.223c1.431,1.412,3.391,3.345,3.976,5.991l.061.278-.182.214a.388.388,0,0,0-.02.229.482.482,0,0,0,.056.17" transform="translate(-341.117 -154.449)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_8" data-name="Path 8" d="M357.336,189.908a1.363,1.363,0,0,1-1.235-1.263,1.721,1.721,0,0,1,.1-.888c-.575-2.159-2.3-3.863-3.567-5.11a14.8,14.8,0,0,1-1.268-1.347,11.568,11.568,0,0,1-2.256-9.984,11.263,11.263,0,0,1,1.774-3.888,10.878,10.878,0,0,1,3.073-2.912,10.681,10.681,0,0,1,8.432-1.286,10.911,10.911,0,0,1,3.8,1.865,11.213,11.213,0,0,1,2.85,3.184,11.544,11.544,0,0,1,1.231,8.987l.053.012-.291.747c-.053.15-.111.3-.171.452a14.307,14.307,0,0,1-.808,1.651,12.233,12.233,0,0,0-1.889,5.8,1.689,1.689,0,0,1,.429.969c.15.987-.333,1.513-.878,1.6l-.018-.122.018.122-9.222,1.406a1.044,1.044,0,0,1-.154.012m2.318-26.787a10.478,10.478,0,0,0-5.568,1.6,10.632,10.632,0,0,0-3,2.848,10.988,10.988,0,0,0-1.734,3.8,11.321,11.321,0,0,0,2.209,9.77,14.546,14.546,0,0,0,1.248,1.325c1.292,1.275,3.061,3.02,3.644,5.265l.01.041-.017.04a1.445,1.445,0,0,0-.094.792c.1.664.584,1.12,1.107,1.043l9.222-1.406c.423-.065.794-.5.67-1.313a1.42,1.42,0,0,0-.391-.861l-.039-.035,0-.053c-.061-2.287,1.082-4.415,1.917-5.969a14.215,14.215,0,0,0,.8-1.624c.06-.148.116-.3.169-.45l.189-.483-.028-.007.036-.125a11.064,11.064,0,0,0,.385-2.026,11.381,11.381,0,0,0-.08-2.786,11.225,11.225,0,0,0-1.474-4.1,10.992,10.992,0,0,0-2.788-3.113,10.633,10.633,0,0,0-3.715-1.823,10.329,10.329,0,0,0-2.667-.35m-2.306,25.639-.043-.072a.641.641,0,0,1-.071-.214.505.505,0,0,1,.034-.309l.155-.185-.048-.218c-.577-2.61-2.522-4.528-3.941-5.929a14.071,14.071,0,0,1-1.17-1.237,10.429,10.429,0,0,1-2.046-9.009,10.123,10.123,0,0,1,1.594-3.494,9.729,9.729,0,0,1,2.751-2.608,9.539,9.539,0,0,1,7.527-1.148,9.751,9.751,0,0,1,3.4,1.67,10.105,10.105,0,0,1,2.562,2.861,10.426,10.426,0,0,1,.9,8.758c-.053.151-.107.294-.162.432a13.648,13.648,0,0,1-.752,1.528c-.93,1.732-2.2,4.1-2.007,6.767l.027.355.31.048.026.066a1.149,1.149,0,0,1,.06.242,1.109,1.109,0,0,1,.014.2l0,.1Zm.135-.468a.332.332,0,0,0-.005.144c0,.019.007.037.011.053l8.731-1.331c0-.017,0-.034-.007-.053a1.17,1.17,0,0,0-.025-.124l-.36-.055-.041-.552c-.2-2.735,1.091-5.143,2.035-6.9a13.565,13.565,0,0,0,.733-1.484c.061-.154.114-.293.163-.434a10.18,10.18,0,0,0-.877-8.556,9.835,9.835,0,0,0-2.5-2.791,9.5,9.5,0,0,0-3.316-1.628,9.293,9.293,0,0,0-7.33,1.117,9.516,9.516,0,0,0-2.682,2.543,9.869,9.869,0,0,0-1.554,3.408,10.176,10.176,0,0,0,1.988,8.783,14.018,14.018,0,0,0,1.16,1.227c1.443,1.423,3.418,3.37,4.009,6.051l.075.339Z" transform="translate(-341.097 -154.43)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_9" data-name="Path 9" d="M358.814,158.952a.573.573,0,0,1-.652-.479l-.7-4.588a.572.572,0,1,1,1.131-.173l.7,4.589a.574.574,0,0,1-.48.652" transform="translate(-342.29 -153.102)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_10" data-name="Path 10" d="M358.709,159.064a.7.7,0,0,1-.689-.592l-.7-4.588a.7.7,0,0,1,.584-.793.7.7,0,0,1,.793.583l.7,4.589a.7.7,0,0,1-.583.793.718.718,0,0,1-.1.008m-.7-5.733a.449.449,0,0,0-.444.517l.7,4.588a.448.448,0,0,0,.887-.135l-.7-4.589a.448.448,0,0,0-.443-.38" transform="translate(-342.271 -153.082)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_11" data-name="Path 11" d="M381.19,172.02l-4.588.7a.573.573,0,0,1-.173-1.132l4.589-.7a.572.572,0,1,1,.172,1.131" transform="translate(-344.834 -155.532)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_12" data-name="Path 12" d="M376.494,172.83a.7.7,0,0,1-.687-.592.7.7,0,0,1,.584-.793l4.588-.7a.68.68,0,0,1,.517.127.7.7,0,0,1-.308,1.249l-4.588.7a.63.63,0,0,1-.106.009m4.59-1.845a.463.463,0,0,0-.069.005l-4.588.7a.449.449,0,0,0-.376.511.444.444,0,0,0,.178.293.454.454,0,0,0,.334.083l4.588-.7a.45.45,0,0,0,.376-.511.451.451,0,0,0-.178-.293.445.445,0,0,0-.265-.088" transform="translate(-344.815 -155.512)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_13" data-name="Path 13" d="M345.26,177.5l-4.588.7a.573.573,0,0,1-.172-1.132l4.589-.7a.572.572,0,1,1,.172,1.131" transform="translate(-339.89 -156.285)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_14" data-name="Path 14" d="M340.567,178.307a.7.7,0,0,1-.688-.592.686.686,0,0,1,.127-.517.7.7,0,0,1,.457-.277l4.587-.7a.7.7,0,1,1,.21,1.376l-4.587.7a.731.731,0,0,1-.105.009m4.588-1.845a.441.441,0,0,0-.067.005l-4.588.7a.448.448,0,0,0-.294.178.448.448,0,0,0,.429.71l4.588-.7a.448.448,0,0,0-.067-.892" transform="translate(-339.87 -156.266)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_15" data-name="Path 15" d="M370.186,160.456a.573.573,0,0,1-.573-.867l2.438-3.949a.572.572,0,1,1,.974.6l-2.437,3.949a.57.57,0,0,1-.4.266" transform="translate(-343.951 -153.397)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_16" data-name="Path 16" d="M370.08,160.567a.7.7,0,0,1-.367-.1.7.7,0,0,1-.227-.958l2.438-3.95a.7.7,0,0,1,1.186.731l-2.439,3.95a.693.693,0,0,1-.487.323.71.71,0,0,1-.1.009m2.438-5.095a.478.478,0,0,0-.1.012.445.445,0,0,0-.278.2l-2.438,3.95a.449.449,0,0,0-.055.339.443.443,0,0,0,.2.278.448.448,0,0,0,.617-.146l2.437-3.95a.449.449,0,0,0-.38-.684" transform="translate(-343.932 -153.377)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_17" data-name="Path 17" d="M347.9,163.912a.572.572,0,0,1-.462-.134l-3.5-3.044a.572.572,0,0,1,.751-.864l3.5,3.044a.573.573,0,0,1-.289,1" transform="translate(-340.403 -153.997)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+    <path id="Path_18" data-name="Path 18" d="M347.795,164.022a.7.7,0,0,1-.457-.17l-3.5-3.044a.7.7,0,0,1,.407-1.22.682.682,0,0,1,.505.169l3.5,3.043a.7.7,0,0,1-.351,1.214.732.732,0,0,1-.106.008m-3.5-4.189h-.032a.447.447,0,0,0-.308.154.453.453,0,0,0-.109.326.447.447,0,0,0,.154.307l3.5,3.044a.448.448,0,0,0,.632-.045.448.448,0,0,0-.045-.633l-3.5-3.044a.443.443,0,0,0-.293-.11" transform="translate(-340.383 -153.977)" fill="#fff" stroke={this.state.selected===5?"#0062FF":"#000"} stroke-width="0.5"/>
+  </g>
+</svg>
+
+
+            <div className="nav__mob_a-name">About Us</div>
+          </NavLink>
+        </div>
+        <ul className="nav__list">
+          <NavLink
+            onClick={() => this.selectedNav(1)}
+            className="nav__link"
+            to="/"
+          >
+            <li className="nav__list_item nav__list_item-1">Home</li>
+            <hr className="nav__list_Hr nav__list_Hr-1" />
+          </NavLink>
+          <NavLink
+            onClick={() => this.selectedNav(3)}
+            className="nav__link"
+            to="/courses"
+          >
+            <li className="nav__list_item nav__list_item-3">Courses</li>
+            <hr className="nav__list_Hr nav__list_Hr-3" />
+          </NavLink>
+          <NavLink
+            onClick={() => this.selectedNav(2)}
+            className="nav__link"
+            to="/pricing"
+          >
+            <li className="nav__list_item nav__list_item-2">Pricing</li>
+            <hr className="nav__list_Hr nav__list_Hr-2" />
+          </NavLink>
+          <NavLink
+            onClick={() => this.selectedNav(4)}
+            className="nav__link"
+            to="/blogs"
+          >
+            <li className="nav__list_item nav__list_item-4">Blogs</li>
+            <hr className="nav__list_Hr nav__list_Hr-4" />
+          </NavLink>
+          <NavLink
+            onClick={() => this.selectedNav(5)}
+            className="nav__link"
+            to="/about"
+          >
+            <li className="nav__list_item nav__list_item-5">About Us</li>
+            <hr className="nav__list_Hr nav__list_Hr-5" />
+          </NavLink>
+          <a
+            style={{ opacity: "0" }}
+            href="tel://+918517885555"
+            className="about__1_text-call nav__list_a"
+            id="nav__list_a"
+          >
+            <img className="about__1_text-call--img1" src={greenCall} alt="" />{" "}
+            +91 8517885555
+          </a>
+        </ul>
+      </div>
+    );
   }
+}
 
-
- export default withRouter(Navigation);
+export default withRouter(Navigation);
