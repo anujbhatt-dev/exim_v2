@@ -26,7 +26,7 @@ class Layout extends Component {
   state = {
     city: [
       {
-        name: "hydrabad",
+        name: "hyderabad",
         img: city,
       },
     ],
@@ -79,6 +79,8 @@ class Layout extends Component {
           <Route>
             <Navigation />
             <GoToTop />
+            <Switch>
+
             <Route exact path="/">
               <Landing
                 page="HOME"
@@ -89,10 +91,7 @@ class Layout extends Component {
             <Route exact path="/blogs" url={this.state.url}>
               <BloggerBlogs page="BLOGS" blogs={this.state.blogs} />
             </Route>
-            <Route exact path="/blog/:blogId/post/:postId" url={this.state.url}>
-              <BloggerBlog page="BLOGS" />
-            </Route>
-
+            
             <Route exact path="/pricing">
               <Pricing page="PRICING" url={this.state.url} />
             </Route>
@@ -107,6 +106,10 @@ class Layout extends Component {
             <Route exact path="/courses/otherCourse1">
               <OtherCourse1 page="COURSES" url={this.state.url} />
             </Route>
+            <Route exact path="/:postId" url={this.state.url}>
+              <BloggerBlog page="BLOGS" />
+            </Route>
+</Switch>
           </Route>
         </Switch>
         <Footer />

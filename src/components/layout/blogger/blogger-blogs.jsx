@@ -54,7 +54,7 @@ export default class BloggerBlogs extends Component {
   
                 {
                   return( <div className="mainBlogs__2_flex-box">
-               <Link className="link" to={{pathname:"/blog/"+blog.blog.id+"/post/"+blog.id, state:blog}} >go...</Link>
+               <Link className="link" to={{pathname:"/"+blog.id, state:blog}} >go...</Link>
                    <img src={blog.labels[0]} alt=""/>
                         <div className="mainBlogs__2_flex-box--title">{blog.title}</div>
                         <div className="mainBlogs__2_flex-box--content">

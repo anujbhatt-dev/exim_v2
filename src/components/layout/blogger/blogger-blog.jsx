@@ -17,7 +17,8 @@ import axios from 'axios'
     }
 
     componentDidMount=()=>{
-       let blogId=this.props.match.params.blogId;
+       let blogId="2936337281138035481";
+    //    console.log(this.props.location.search.substring(9));
        let postId=this.props.match.params.postId;
        let BLOGGER_POST_API=`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts/${postId}?key=${this.GOOGLE_APP_KEY}`;
 
@@ -25,8 +26,21 @@ import axios from 'axios'
        .then(res=>this.setState({blog:res.data}))
        .catch(err=>alert("somethin went wrong -> Log.jsx"))
 
-
+// alert(postId)
     }
+
+    componentDidUpdate=()=>{
+        let blogId="2936337281138035481";
+     //    console.log(this.props.location.search.substring(9));
+        let postId=this.props.match.params.postId;
+        let BLOGGER_POST_API=`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts/${postId}?key=${this.GOOGLE_APP_KEY}`;
+ 
+        axios.get(BLOGGER_POST_API)
+        .then(res=>this.setState({blog:res.data}))
+        .catch(err=>alert("somethin went wrong -> Log.jsx"))
+ 
+//  alert(postId)
+     }
 
 render() {
 
@@ -43,8 +57,6 @@ render() {
 while ( m = rex.exec( str ) ) {
     urls.push( m[1] );
 }
-
-console.log(urls)
 
     return (
         <div className="blog">
