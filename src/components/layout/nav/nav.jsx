@@ -9,10 +9,14 @@ import $ from "jquery"
 
   class Navigation extends Component{
 
-    
+     state={
+       selected:0
+     }
 
 
     componentDidMount=()=>{
+
+      
 
 
 
@@ -104,21 +108,9 @@ import $ from "jquery"
       $(".nav__mob_wrapper3").css({"animation":"none","opacity":"0","visibility":"hidden"})
     }
 
-    // menuHandler=()=>{
-    //
-    //      $(".nav__mob_wrapper2").css({"animation":"wrapper2 1.5s linear","opacity":"1","visibility":"visible"});
-    //      setTimeout(()=>{
-    //        $(".nav__mob_wrapper").css({"opacity":"1","visibility":"visible"});
-    //        $(".nav__mob_wrapper3").css({"animation":"wrapper3 10s linear infinite","opacity":"1","visibility":"visible"})
-    //      },800)
-    //      setTimeout(()=>{
-    //        $(".nav__mob_wrapper2").css({"animation":"wrapper2 3s linear","opacity":"0","visibility":"hidden"});
-    //      },1400)
-    // }
-
     render(){
 
-;
+
 
       return (
           <div className="nav">

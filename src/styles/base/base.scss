@@ -162,6 +162,7 @@ a {
 }
 .layout{
   position:relative;
+  overflow-x: hidden;
   &__city{
     position: absolute;
     top: 0;

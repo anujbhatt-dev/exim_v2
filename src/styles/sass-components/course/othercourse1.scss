@@ -82,6 +82,10 @@
     min-height: 100vh;
     margin-top: 5rem;
     // overflow-x: hidden;
+    @include respond(tab-port){
+       min-height: auto;
+
+    }
     &_selected{
       color: #D0D0D0;
       font-size: 10rem;
@@ -164,11 +168,104 @@
 }
 .middle{
   margin: 0 10rem;
+  margin-bottom: 20rem;
   @include respond(tab-port){
     display: none;
   }
   &__lesson{
+      &_item{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+        width: 60%;
+        margin-left: 20rem;
+        @include respond(tab-port){
+          margin-bottom: 2rem;
+          width: 100%;
+          margin-left: 0rem;
+        }
+        & > img{
+          position: static;
+          height: 8rem;
+          width:8rem;
+        }
+        &-middle{
+           margin: 0 10rem 0 5rem;
+           @include respond(tab-port){
+              margin: 0 1rem 0 1rem;
 
+           }
+           & .title{
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                color: $color-exim-blue;
+                @include respond(tab-port){
+                  color: $color-exim-dark-grey;
+                  font-weight: 500;
+
+                }
+           }
+           & .subtitle{
+                font-size: 2rem;
+                color: $color-exim-dark-grey;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                margin-left: 2rem;
+
+           }
+           & .lesson{
+             font-size: 1.5rem;
+             color: $color-exim-dark-grey;
+             transition: all .5;
+             margin-left: -1.5rem;
+             @include respond(tab-port){
+                margin: 0;
+
+             }
+           }
+        }
+        &-right{
+          padding: 1rem 1rem;
+          background: $color-exim-blue;
+          color: white;
+          font-size: 1.5rem;
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all .5;
+          &:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 0 2rem rgna($color-exim-grey,.5);
+          }
+          & *{
+            margin: 0 1rem;
+          }
+          & div{
+          }
+          & span{
+
+          }
+          & svg{
+            transition: all .5s;
+            // position: relative;
+            // top: .5rem;
+            transform-origin: center;
+
+          }
+          @include respond(tab-port){
+            padding: 0;
+            background: white;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            border-radius: 8px;
+          }
+        }
+      }
   }
   &__detail{
     font-size: 2rem;
@@ -183,6 +280,19 @@
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 3rem;
+      &-more{
+        flex-basis: 100%;
+        color: $color-exim-blue;
+        background: $color-white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        & span{
+          margin-right: 2rem;
+        }
+      }
       &-div{
         flex-grow: 1;
         margin-left: 2.5rem;
@@ -238,7 +348,16 @@
 
   }
   &__review{
+    & img{
+      // width: 90vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: static;
+      margin: 0;
+      padding: 0;
 
+    }
   }
 }
 

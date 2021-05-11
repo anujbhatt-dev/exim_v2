@@ -7,6 +7,8 @@ import whyJoin from "../../../../assets/images/whyJoin.svg"
 import handPhone from "../../../../assets/images/handPhone.svg"
 import pr from "../../../../assets/images/planeRoute.svg";
 import coursemob from "../../../../assets/images/coursemob.svg";
+import otherCourse1 from "../../../../assets/images/otherCourse1.svg";
+import horGraph from "../../../../assets/images/horGraph.svg";
 import $ from "jquery"
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -17,33 +19,45 @@ class OtherCourse1 extends Component{
     courses:[
       {
         title:"Parties and places involved in import/ export",
-        lessons:"140 mins",
-        locked:false
+        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum doloremque incidunt magnam cumque expedita consequuntur voluptates. Illo porro nesciunt, amet, voluptate itaque, alias commodi eius quia nihil placeat soluta.",
+        locked:false,
+        duration:"140 mins",
+        subtitle:"Lorem ipsum dolor sit amet"
       },
       {
         title:"Types of Transportation, Container and packaging",
-        lessons:"80 mins",
-        locked:true
+        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis officia, aspernatur error, praesentium ab animi et soluta eos laudantium velit placeat sit id eligendi a dicta eaque hic. Eos, optio!",
+        locked:false,
+        duration:"80 mins",
+        subtitle:"Lorem ipsum dolor sit amet"
       },
       {
         title:"Basic Registration for Exim",
-        lessons:"110 mins",
-        locked:true
+        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nam rem, nemo magnam tempore commodi reiciendis molestiae ullam vero. Fuga magnam qui perferendis, molestiae ad minima nulla culpa, consequuntur dolore.",
+        locked:false,
+        duration:"110 mins",
+        subtitle:"Lorem ipsum dolor sit amet"
       },
       {
         title:"Export Incentives",
-        lessons:"30 mins",
-        locked:true
+        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quas saepe aspernatur cumque, voluptatem totam. Sit tempora illo, autem inventore, impedit eaque aliquam fugiat quam eius, pariatur modi praesentium ut.",
+        locked:false,
+        duration:"30 mins",
+        subtitle:"Lorem ipsum dolor sit amet"
       },
       {
         title:"Incoterms",
-        lessons:"10 mins",
-        locked:true
+        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime inventore, distinctio, laborum neque fugiat repellendus eum recusandae, quam voluptatem voluptate consequuntur doloremque eaque accusamus, rerum blanditiis impedit officia! Itaque, non?",
+        locked:false,
+        duration:"10 mins",
+        subtitle:"Lorem ipsum dolor sit amet"
       },
       {
         title:"Basic Terms",
-        lessons:"60 mins",
-        locked:true
+        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptates tenetur sint omnis molestias perferendis explicabo quae, veniam, assumenda, minima aliquam cupiditate aut quisquam corporis ducimus quod enim voluptatum dolore.",
+        locked:false,
+        duration:"60 mins",
+        subtitle:"Lorem ipsum dolor sit amet"
       }
     ],
     panel:"lessonn",
@@ -51,16 +65,19 @@ class OtherCourse1 extends Component{
       {
         review:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit, aliquid. Blanditiis expedita culpa vitae numquam laborum consectetur quam illo, dolore, excepturi perferendis voluptatibus, saepe non! Ullam modi voluptatem saepe omnis amet dolore facilis illo! Veniam tempore quas esse excepturi id fugit repellendus maiores consequuntur ipsam, dolore magni deleniti fuga velit recusandae! Repudiandae itaque unde sint. Aliquid quam, impedit ullam delectus deleniti voluptas iste quae explicabo quia sint mollitia, eveniet itaque in, atque nam asperiores est ea, beatae assumenda aliquam. Soluta labore saepe quos debitis iusto nam assumenda ipsa, dolor fugit aspernatur maxime eos necessitatibus voluptatem exercitationem quia, laborum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia molestiae in fugiat totam. Animi tenetur possimus quod atque mollitia ab ratione at optio eius, quaerat ullam dolore, ea amet saepe adipisci fugit voluptas quis, enim reiciendis. Possimus aperiam doloremque quibusdam ea, sunt sapiente dolores fuga quae quod, vero est consequuntur voluptatem ut! Eligendi deleniti ea dolorem sint rerum explicabo porro vel aut provident maxime harum, quisquam, numquam quod nihil natus atque officiis eius, quas alias distinctio vitae. Optio cupiditate ducimus eaque. Possimus, deserunt, alias. Incidunt laboriosam distinctio ipsa, voluptatum libero itaque animi qui provident voluptates maiores quibusdam, minus, excepturi quam deleniti veritatis explicabo odio quae cupiditate impedit placeat molestias laudantium! Itaque, distinctio ut molestias illo quas suscipit eos aliquid accusantium, dolore nihil aut consequatur ex possimus fugit laborum numquam, aliquam consectetur harum saepe. Laudantium suscipit, at eveniet. Similique, repellendus modi voluptates ullam. Iusto recusandae deserunt, et, quas rerum quasi ut voluptatibus sit delectus corporis temporibus sapiente odit autem, beatae. Labore consectetur harum voluptatum dolorum quam, sequi obcaecati nulla minima modi voluptatem quia, quibusdam dolorem qui sit porro, veniam nisi aliquam et. Itaque, voluptatem obcaecati iste atque dignissimos enim aut corporis, voluptates quod sunt adipisci. Ab reiciendis accusantium, rerum consequuntur?",
         rating:3,
+        locked:false,
         name:"anuj bhatt"
       },
       {
         review:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit, aliquid. Blanditiis expedita culpa vitae numquam laborum consectetur quam illo, dolore, excepturi perferendis voluptatibus, saepe non! Ullam modi voluptatem saepe omnis amet dolore facilis illo! Veniam tempore quas esse excepturi id fugit repellendus maiores consequuntur ipsam, dolore magni deleniti fuga velit recusandae! Repudiandae itaque unde sint. Aliquid quam, impedit ullam delectus deleniti voluptas",
         rating:3,
+        locked:false,
         name:"sagar panwar"
       },
       {
         review:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit, aliquid. Blanditiis expedita culpa vitae numquam laborum consectetur quam illo, dolore, excepturi perferendis voluptatibus, saepe non! Ullam modi voluptatem saepe omnis amet dolore facilis illo! Veniam tempore quas esse excepturi id fugit repellendus maiores consequuntur ipsam, dolore magni deleniti fuga velit recusandae! Repudiandae itaque unde sint. Aliquid quam, impedit ullam delectus deleniti voluptas iste quae explicabo quia sint mollitia, eveniet itaque in, atque nam asperiores est ea, beatae assumenda aliquam. Soluta labore saepe quos debitis iusto nam assumenda ipsa, dolor fugit aspernatur maxime eos necessitatibus voluptatem exercitationem quia, laborum ipsam!",
         rating:5,
+        locked:false,
         name:"anuj bhatt"
       },
     ],
@@ -97,6 +114,23 @@ class OtherCourse1 extends Component{
     })
   }
 
+
+  unlockHandler=(n)=>{
+    let newCourse = this.state.courses;
+    newCourse[n].locked = !newCourse[n].locked;
+    this.setState({
+      courses:newCourse
+    })
+  }
+
+  unlockHandler2=(n)=>{
+    let newCourse = this.state.reviews;
+    newCourse[n].locked = !newCourse[n].locked;
+    this.setState({
+      reviews:newCourse
+    })
+  }
+
     render(){
 
       return (
@@ -114,7 +148,7 @@ class OtherCourse1 extends Component{
                                           {course.title}
                                       </div>
                                       <div className="course__wrapper_box-lock">
-                                           <div>{course.lessons}</div>
+                                           <div>{course.duration}</div>
                                       </div>
                                    </div>
                          })
@@ -213,10 +247,27 @@ class OtherCourse1 extends Component{
                          </div>
                    </div>
                    <div className="otherCourse1__Wrapper_selected">{this.state.panel}</div>
+
+
                    <div className="middle">
                        {this.state.panel==="lessonn"?
                          <div className="middle__lesson">
-                              middle__lesson
+                              {this.state.courses.map((item,i)=>{
+                                return <div className="middle__lesson_item">
+                                          <img src={otherCourse1} alt=""/>
+                                          <div className="middle__lesson_item-middle">
+                                              <div className="title">{item.title}</div>
+                                              <div className="subtitle">{item.subtitle}</div>
+                                              <div className="lesson">{item.locked?item.lessons:item.lessons.substring(0,51)}</div>
+                                          </div>
+                                          <div onClick={()=>{this.unlockHandler(i)}} className="middle__lesson_item-right">
+                                              <span>detail</span>
+                                                  <svg style={item.locked?{transform:"rotate(180deg)"}:null} xmlns="http://www.w3.org/2000/svg" width="22.43" height="16.391" viewBox="0 0 22.43 16.391">
+                                                    <path id="Polygon_9" data-name="Polygon 9" d="M7.914,4.825a4,4,0,0,1,6.6,0l3.632,5.308a4,4,0,0,1-3.3,6.259H7.584a4,4,0,0,1-3.3-6.259Z" transform="translate(22.43 16.391) rotate(180)" fill="#fff"/>
+                                                  </svg>
+                                          </div>
+                                       </div>
+                              })}
                          </div>
                          :this.state.panel==="details"?
                          <div className="middle__detail">
@@ -225,7 +276,6 @@ class OtherCourse1 extends Component{
                          <div className="middle__review">
                               {this.state.reviews.map((review,i)=>{
                                 return <div className="middle__review_flex">
-
                                             <div className="middle__review_flex-svg">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
                                                 <path id="Icon_open-person" data-name="Icon open-person" d="M21.961,0A11.136,11.136,0,0,0,10.981,11.25,11.136,11.136,0,0,0,21.961,22.5,11.136,11.136,0,0,0,32.942,11.25,11.136,11.136,0,0,0,21.961,0ZM10.487,22.5C4.667,22.725,0,26.64,0,31.5V36H43.923V31.5c0-4.86-4.612-8.775-10.487-9a16.88,16.88,0,0,1-22.95,0Z" transform="translate(14.039 15)" fill="none" stroke="#000" stroke-width="1"/>
@@ -251,16 +301,44 @@ class OtherCourse1 extends Component{
                                                      })}
                                                 </div>
                                             </div>
-                                            <div className="middle__review_flex-review">{review.review}</div>
+                                            <div className="middle__review_flex-review">{review.locked?review.review:review.review.substring(0,400)}</div>
+                                            <div  onClick={()=>{this.unlockHandler2(i)}} className="middle__review_flex-more">
+                                                <span>Read more</span>
+                                                <svg  style={review.locked?{transform:"rotate(180deg)"}:null} xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13">
+                                                  <path id="Polygon_10" data-name="Polygon 10" d="M7.078,3.315a3,3,0,0,1,4.844,0L15.514,8.23A3,3,0,0,1,13.092,13H5.908A3,3,0,0,1,3.486,8.23Z" transform="translate(19 13) rotate(180)" fill="#0062ff"/>
+                                                </svg>
+                                            </div>
                                        </div>
                               })}
                          </div>
                        }
                    </div>
                    <div className="middleMob">
-                       {this.state.panel==="lessonn"?
-                         <div className="middleMob__lesson">
-                              middleMob__lesson
+                             {this.state.panel==="lessonn"?
+                               <div className="middleMob__lesson">
+                               {this.state.courses.map((item,i)=>{
+                                 return <div className="middle__lesson_item">
+                                           <img src={otherCourse1} alt=""/>
+                                           <div className="middle__lesson_item-middle">
+                                               <div className="title">{item.title}</div>
+                                               <div className="lesson">{item.locked?item.lessons:null}</div>
+                                           </div>
+                                           <div onClick={()=>{this.unlockHandler(i)}} className="middle__lesson_item-right">
+                                              {item.locked
+                                              ?<svg xmlns="http://www.w3.org/2000/svg" width="25.948" height="25.948" viewBox="0 0 25.948 25.948">
+                                                  <path id="Path_5144" data-name="Path 5144" d="M25.948,14.474A11.474,11.474,0,1,1,14.474,3,11.474,11.474,0,0,1,25.948,14.474Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#002aff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                  <path id="Path_5146" data-name="Path 5146" d="M12,18h9.179" transform="translate(-3.616 -5.026)" fill="none" stroke="#002aff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                </svg>
+
+                                              :<svg xmlns="http://www.w3.org/2000/svg" width="25.948" height="25.948" viewBox="0 0 25.948 25.948">
+                                              <path id="Path_5144" data-name="Path 5144" d="M25.948,14.474A11.474,11.474,0,1,1,14.474,3,11.474,11.474,0,0,1,25.948,14.474Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#002aff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                              <path id="Path_5145" data-name="Path 5145" d="M18,12v9.179" transform="translate(-5.026 -3.616)" fill="none" stroke="#002aff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                              <path id="Path_5146" data-name="Path 5146" d="M12,18h9.179" transform="translate(-3.616 -5.026)" fill="none" stroke="#002aff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                              </svg>}
+
+                                           </div>
+                                        </div>
+                               })}
                          </div>
                          :this.state.panel==="details"?
                          <div className="middleMob__detail">
@@ -295,9 +373,16 @@ class OtherCourse1 extends Component{
                                                 })}
                                            </div>
                                        </div>
-                                       <div className="middle__review_flex-review">{review.review}</div>
+                                       <div className="middle__review_flex-review">{review.locked?review.review:review.review.substring(0,400)}</div>
+                                       <div  onClick={()=>{this.unlockHandler2(i)}} className="middle__review_flex-more">
+                                           <span>Read more</span>
+                                           <svg  style={review.locked?{transform:"rotate(180deg)"}:null} xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13">
+                                             <path id="Polygon_10" data-name="Polygon 10" d="M7.078,3.315a3,3,0,0,1,4.844,0L15.514,8.23A3,3,0,0,1,13.092,13H5.908A3,3,0,0,1,3.486,8.23Z" transform="translate(19 13) rotate(180)" fill="#0062ff"/>
+                                           </svg>
+                                       </div>
                                   </div>
                          })}
+                         <img src={horGraph} alt=""/>
                          </div>
                        }
                    </div>

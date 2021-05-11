@@ -61,7 +61,7 @@
 
 @include respond(tab-port){
   .nav{
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     // flex-direction:column;
     position: relative;
     // position:sticky;
@@ -89,20 +89,22 @@
        z-index: 2000000000;
        & a{
          display: flex;
-         justify-content: center;
+         justify-content: space-between;
          align-items:center;
          flex-direction: column;
          color: black;
          & svg{
            width: 5rem;
            object-fit: cover;
+
          }
        }
        &_a-name{
+
          font-size: 1.3rem;
          font-weight: bolder;
          // letter-spacing: 1.5px;
-         margin-top: .3rem;
+         margin-top: .5rem;
        }
     }
   }
