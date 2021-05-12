@@ -1,12 +1,15 @@
-import React, { Component } from "react";
-import Navigation from "./nav/nav";
-import Landing from "./landing/landing";
-import Pricing from "./pricing/pricing";
-import AboutUs from "./aboutUs/aboutUs";
-import Course from "./course/course";
-import OtherCourse1 from "./course/othercourse1/othercourse1";
-import Footer from "./footer/footer";
-import GoToTop from "./goToTop/goToTop";
+import React, {Component} from "react"
+import Navigation from "./nav/nav"
+import Landing from "./landing/landing"
+import Pricing from "./pricing/pricing"
+import AboutUs from "./aboutUs/aboutUs"
+import Course from "./course/course"
+import OtherCourse1 from "./course/othercourse1/othercourse1"
+import OtherCourse2 from "./course/othercourse2/othercourse2"
+import OtherCourse3 from "./course/othercourse3/othercourse3"
+
+import Footer from "./footer/footer"
+import GoToTop from "./goToTop/goToTop"
 import { Switch, Route } from "react-router-dom";
 import BlogsPage from "./blog_page/blog_page";
 import BlogsManual from "./blogs_manual/blogs_manual";
@@ -46,10 +49,10 @@ class Layout extends Component {
       let selectedCity="";
    if(window.location.toString().indexOf("hyderabad")!==-1)
        selectedCity="hyderabad";
-     
+
     if(selectedCity==="")
      return;
-     
+
      for(let i=0;i< this.state.city.length ;i++)
         if(this.state.city[i].name===selectedCity)
           {
@@ -66,55 +69,57 @@ class Layout extends Component {
 
   render() {
     return (
-      <div className="layout">
-        <div className="layout__city">
-          {this.state.selectedCityIndex===-1?"india":this.state.city[this.state.selectedCityIndex].name}
-        </div>
-        <Switch>
-          <Route exact path="/admin">
-            <Navigation />
-            <AdminLogin url={this.state.url} />
-          </Route>
+          <div className="layout">
+               <div className="layout__city">hydrabad</div>
+               <Switch>
 
-          <Route>
-            <Navigation />
-            <GoToTop />
-            <Switch>
+              <Route exact  path="/admin">
+              <Navigation/>
+                  <AdminLogin  url={this.state.url}/>
+              </Route>
 
-            <Route exact path="/">
-              <Landing
-                page="HOME"
-                city={this.state.selectedCityIndex===-1?null:{...this.state.city[this.state.selectedCityIndex]}}
-                url={this.state.url}
-              />
-            </Route>
-            <Route exact path="/blogs" url={this.state.url}>
-              <BloggerBlogs page="BLOGS" blogs={this.state.blogs} />
-            </Route>
-            
-            <Route exact path="/pricing">
-              <Pricing page="PRICING" url={this.state.url} />
-            </Route>
 
-            <Route exact path="/about">
-              <AboutUs page="ABOUT" url={this.state.url} />
-            </Route>
+               <Route>
+               <Navigation/>
+               <GoToTop/>
+               <Route exact  path="/">
+                 <Landing page="HOME" url={this.state.url}/>
+               </Route>
+               <Route  exact path="/blogs" url={this.state.url} >
+                 <BloggerBlogs page="BLOGS" blogs={this.state.blogs}  />
+              </Route>
+              <Route  exact path="/blog/:blogId/post/:postId" url={this.state.url}>
+                 <BloggerBlog page="BLOGS" />
+              </Route>
 
-            <Route exact path="/courses">
-              <Course page="COURSES" url={this.state.url} />
-            </Route>
-            <Route exact path="/courses/otherCourse1">
-              <OtherCourse1 page="COURSES" url={this.state.url} />
-            </Route>
-            <Route exact path="/:postId" url={this.state.url}>
-              <BloggerBlog page="BLOGS" />
-            </Route>
-</Switch>
-          </Route>
-        </Switch>
-        <Footer />
-      </div>
-    );
+              <Route exact  path="/pricing">
+                  <Pricing page="PRICING"  url={this.state.url}/>
+              </Route>
+
+              <Route exact  path="/about">
+                  <AboutUs page="ABOUT"  url={this.state.url}/>
+              </Route>
+
+              <Route exact  path="/courses">
+                  <Course page="COURSES"  url={this.state.url}/>
+              </Route>
+              <Route exact  path="/courses/otherCourse1">
+                  <OtherCourse1 page="COURSES"  url={this.state.url}/>
+              </Route>
+              <Route exact  path="/courses/otherCourse2">
+                  <OtherCourse2 page="COURSES"  url={this.state.url}/>
+              </Route>
+              <Route exact  path="/courses/otherCourse3">
+                  <OtherCourse3 page="COURSES"  url={this.state.url}/>
+              </Route>
+              </Route>
+
+
+               </Switch>
+               <Footer/>
+
+          </div>
+    )
   }
 }
 

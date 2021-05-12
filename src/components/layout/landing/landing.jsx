@@ -6,6 +6,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import $ from "jquery"
 import live from "../../../assets/images/live.svg"
+import city from "../../../assets/images/city.svg"
 import demo from "../../../assets/images/demo.svg"
 import book from "../../../assets/images/book.svg";
 import laptop from "../../../assets/images/laptop.svg";
@@ -409,10 +410,18 @@ import fire from "../firebase_config"
                 //city promotion
               }
 
-             {this.props.city?<div className="landing__city">
+             {this.props.city?
+               <div className="landing__city">
                   <div className="landing__city_msg">Serving at Your City</div>
                   <img src={this.props.city.img} alt={this.props.city.name}/>
               </div>:null}
+              {
+
+              // <div className="landing__city">
+              //    <div className="landing__city_msg">Serving at Your City</div>
+              //    <img src={city} alt=""/>
+              // </div>
+             }
 
               {
                 // 3

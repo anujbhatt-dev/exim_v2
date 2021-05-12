@@ -174,11 +174,11 @@ import "aos/dist/aos.css"
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
                         <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsum eum possimus eligendi similique voluptates veniam cumque cupiditate accusantium, reiciendis laboriosam molestiae, beatae voluptate blanditiis quo itaque esse doloremque ipsa explicabo quibusdam. Vero ducimus voluptatibus accusamus nam nemo quibusdam voluptates exercitationem necessitatibus ex at et repellat cumque, optio, eius culpa delectus, laborum.</div>
-                        <Link  className="course__div_row-a" to="/courses/otherCourse1">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/courses/otherCourse2">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
                         <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse1">View Details</Link>
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse2">View Details</Link>
                     </div>
                 </div>
 
@@ -189,11 +189,11 @@ import "aos/dist/aos.css"
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
                         <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsum eum possimus eligendi similique voluptates veniam cumque cupiditate accusantium, reiciendis laboriosam molestiae, beatae voluptate blanditiis quo itaque esse doloremque ipsa explicabo quibusdam. Vero ducimus voluptatibus accusamus nam nemo quibusdam voluptates exercitationem necessitatibus ex at et repellat cumque, optio, eius culpa delectus, laborum.</div>
-                        <Link  className="course__div_row-a" to="/courses/otherCourse1">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/courses/otherCourse3">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
                         <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse1">View Details</Link>
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse3">View Details</Link>
                     </div>
                 </div>
 

@@ -85,12 +85,12 @@ class OtherCourse1 extends Component{
   }
 
   componentDidMount = () => {
-    window.scrollTo({top:0,behavior:"smooth"});
+    // window.scrollTo({ top: 0, behavior: "smooth" });
     Aos.init({
       duration: 1500,
       delay: 100,
     });
-  }
+  };
 //
   panelHandler=(p)=>{
     // alert("otherCourse1__Wrapper_row1--"+(((p%3)===0)?"3":p));
