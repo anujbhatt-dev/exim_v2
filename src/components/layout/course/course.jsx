@@ -111,7 +111,7 @@ import "aos/dist/aos.css"
              <link rel="canonical" href={this.props.url+"/courses"} />
              <meta name="description" content="Find the latest and revised Export and Import course details at EXIM EDUCATION. For detailed information, inquire today!"/>
          </Helmet> */}
-                 <h1 className="heading-primary landing__3_heading">import & export course details / exim course details</h1>
+                 <h1 className="heading-primary landing__3_heading">import & export course </h1>
                  <div  className="course__btnWrap">
                      <a rel="noreferrer" href="http://eximeducation.com/course/pdf/Course_01.pdf" target="_blank" className="course__btnWrap_btn"><span>Detailed</span><img src={file} alt=""/></a>
                  </div>

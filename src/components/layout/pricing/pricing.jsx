@@ -309,7 +309,7 @@ class Pricing extends Component {
         }
 
         <div className="pricing__course">
-            <h1 className="heading-primary landing__3_heading">course details</h1>
+            {/* <h1 className="heading-primary landing__3_heading">course details</h1> */}
             <div className="course__div">
                 <img className="course__div_route" src={pr} alt=""/>
                 <div id="pricing__course" className="course__wrapper">

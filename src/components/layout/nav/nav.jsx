@@ -268,7 +268,7 @@ class Navigation extends Component {
 </svg>
 
 
-            <div className="nav__mob_a-name">About Us</div>
+            <div className="nav__mob_a-name">Contact Us</div>
           </NavLink>
         </div>
         <ul className="nav__list">
@@ -309,7 +309,7 @@ class Navigation extends Component {
             className="nav__link"
             to="/about"
           >
-            <li className="nav__list_item nav__list_item-5">About Us</li>
+            <li className="nav__list_item nav__list_item-5">Contact Us</li>
             <hr className="nav__list_Hr nav__list_Hr-5" />
           </NavLink>
           <a

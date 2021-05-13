@@ -35,7 +35,7 @@ export default class BloggerBlogs extends Component {
             .then(res =>
                 this.setState({ blogs: [...res.data.items] })
             )
-            .catch(err => alert("something went wrong"));
+            .catch(err => alert("something went wrong ... check your network"));
        else 
          this.setState({blogs:this.props.blogs})
       }
