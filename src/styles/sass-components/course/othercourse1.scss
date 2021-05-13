@@ -383,8 +383,12 @@
 }
 #review{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  & span{
+    margin-right: 1rem; 
+  }
   & svg{
     height: 3rem;
+
   }
 }

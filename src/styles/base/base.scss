@@ -166,7 +166,7 @@ a {
   &__city{
     position: absolute;
     top: 0;
-    right: 0rem;
+    right: -3rem;
     background: $color-exim-blue;
     color: $color-white;
     text-transform: uppercase;
@@ -176,6 +176,7 @@ a {
     // z-index: 100000;
     @include respond(tab-port){
       padding: 2rem 2rem 2rem 2rem;
+      right: 0rem;
     }
   }
   @include respond(tab-port){
