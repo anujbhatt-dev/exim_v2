@@ -137,14 +137,14 @@ import "aos/dist/aos.css"
                          <div  className="course__div_row-head">
                              Export IMport Course
                          </div>
-                         <Link className="course__div_row-a" to="/courses/ExportImprotCourse">Details <img src={arrow} alt=""/></Link>
+                         <Link className="course__div_row-a" to="/exportimprotcourse">Details <img src={arrow} alt=""/></Link>
                      </div>
                   </div>
                   <div className="course__wrapperMob">
                        <img src={coursemob} alt=""/>
                        <div className="course__wrapperMob_flex">
                            <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                           <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse1">View Details</Link>
+                           <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/exportimprotcourse">View Details</Link>
                        </div>
                   </div>
 
@@ -208,11 +208,11 @@ import "aos/dist/aos.css"
 
 
                         </div>
-                        <Link  className="course__div_row-a" to="/courses/otherCourse1">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/othercourse1">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
                         <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse1">View Details</Link>
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/othercourse1">View Details</Link>
                     </div>
                 </div>
 
@@ -272,11 +272,11 @@ import "aos/dist/aos.css"
 
 
                         </div>
-                        <Link  className="course__div_row-a" to="/courses/otherCourse2">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/othercourse2">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
                         <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse2">View Details</Link>
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/othercourse2">View Details</Link>
                     </div>
                 </div>
 
@@ -336,11 +336,11 @@ import "aos/dist/aos.css"
 
 
                         </div>
-                        <Link  className="course__div_row-a" to="/courses/otherCourse3">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/othercourse3">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
                         <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse3">View Details</Link>
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/othercourse3">View Details</Link>
                     </div>
                 </div>
 

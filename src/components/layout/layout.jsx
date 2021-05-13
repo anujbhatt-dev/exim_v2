@@ -135,16 +135,16 @@ class Layout extends Component {
               <Route exact path="/courses">
                 <Course page="COURSES" url={this.state.url} />
               </Route>
-              <Route exact path="/courses/ExportImprotCourse">
+              <Route exact path="/ExportImprotCourse">
                 <OtherCourse0 page="COURSES" url={this.state.url} />
               </Route>
-              <Route exact path="/courses/otherCourse1">
+              <Route exact path="/othercourse1">
                 <OtherCourse1 page="COURSES" url={this.state.url} />
               </Route>
-              <Route exact path="/courses/otherCourse2">
+              <Route exact path="/othercourse2">
                 <OtherCourse2 page="COURSES" url={this.state.url} />
               </Route>
-              <Route exact path="/courses/otherCourse3">
+              <Route exact path="/othercourse3">
                 <OtherCourse3 page="COURSES" url={this.state.url} />
               </Route>
               <Route path="/:postId" url={this.state.url}>
