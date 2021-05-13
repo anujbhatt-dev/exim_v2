@@ -71,7 +71,7 @@
     // left: -2rem;
     margin-left: -1rem;
     width: 100vw;
-    z-index: 1000;
+    z-index: 2000000000;
     & img{
       height: 5rem;
     }
@@ -86,7 +86,6 @@
        bottom: 0;
        width: 100vw;
        background: $color-white;
-       z-index: 2000000000;
        & a{
          display: flex;
          justify-content: space-between;
@@ -94,7 +93,7 @@
          flex-direction: column;
          color: black;
          & svg{
-           width: 5rem;
+           width: 3.5rem;
            object-fit: cover;
 
          }

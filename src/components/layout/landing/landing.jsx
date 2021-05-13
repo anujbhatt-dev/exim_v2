@@ -5,8 +5,10 @@ import {Helmet} from "react-helmet"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import $ from "jquery"
+import greenCall from "../../../assets/images/greenCall.svg"
 import live from "../../../assets/images/live.svg"
 import city from "../../../assets/images/city.svg"
+import vcallImg from "../../../assets/images/vcallImg.svg"
 import demo from "../../../assets/images/demo.svg"
 import book from "../../../assets/images/book.svg";
 import laptop from "../../../assets/images/laptop.svg";
@@ -253,8 +255,8 @@ import fire from "../firebase_config"
     });
 
      $(window).scroll(()=>{
-       // console.log($(window).scrollTop());
-       if($(window).scrollTop()>=4000 ){
+       console.log($(window).scrollTop());
+       if($(window).scrollTop()>=3400 ){
          $(".blank__1").css({"animation":"slides 1s linear","animation-fill-mode":"forward"});
          setTimeout(()=>{
            $(".blank__1").css({"opacity":"0"})
@@ -494,17 +496,27 @@ import fire from "../firebase_config"
               }
 
                <div className="landing__nextBD">
-                    <div className="landing__nextBD_head">
-                    NEXT BATCH
-                    <img src={live} alt=""/>
-                    </div>
-                    <div className="landing__nextBD_date">{this.state.webinar.nextbatch}</div>
-                    <Link to="/courses" className="landing__nextBD_btn">
-                    <span>Join Today</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="81.992" height="14.514" viewBox="0 0 81.992 14.514">
-                            <path id="Icon_awesome-long-arrow-alt-right" data-name="Icon awesome-long-arrow-alt-right" d="M17.188,14.879H-55.177a.791.791,0,0,0-.791.791v3.691a.791.791,0,0,0,.791.791H17.188v3.036a1.582,1.582,0,0,0,2.7,1.119l5.672-5.672a1.582,1.582,0,0,0,0-2.237l-5.672-5.672a1.582,1.582,0,0,0-2.7,1.119Z" transform="translate(55.968 -10.258)" fill="#0062ff"/>
-                    </svg>
-                    </Link>
+                    <div className="landing__nextBD_flex">
+                          <div className="landing__nextBD_head">
+                              NEXT BATCH
+                              <img src={live} alt=""/>
+                          </div>
+                          <div className="landing__nextBD_date">{this.state.webinar.nextbatch}</div>
+                          <a
+                            href="tel://+918517885555"
+                            className="landing__nextBD_call"
+                          >
+                            <img className="" src={greenCall} alt="" />{" "}
+                            +91 8517885555
+                          </a>
+                      </div>
+                      <Link to="/courses" className="landing__nextBD_btn">
+                      <span>Join Today</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="81.992" height="14.514" viewBox="0 0 81.992 14.514">
+                              <path id="Icon_awesome-long-arrow-alt-right" data-name="Icon awesome-long-arrow-alt-right" d="M17.188,14.879H-55.177a.791.791,0,0,0-.791.791v3.691a.791.791,0,0,0,.791.791H17.188v3.036a1.582,1.582,0,0,0,2.7,1.119l5.672-5.672a1.582,1.582,0,0,0,0-2.237l-5.672-5.672a1.582,1.582,0,0,0-2.7,1.119Z" transform="translate(55.968 -10.258)" fill="#0062ff"/>
+                      </svg>
+                      </Link>
+                    <img src={vcallImg} alt=""/>
                </div>
 
 
@@ -522,7 +534,7 @@ import fire from "../firebase_config"
                      </div>
                      <div  className="landing__10_text-flex">
                          <a style={{zindex:"3"}} href={this.state.webinarLink}  onClick={this.detailHandler} target="_blank" rel="noreferrer" style={{width:"26rem"}}  className="landing__10_text-flex--btn">Register</a>
-                         <a style={{zindex:"3"}} href={this.state.webinarLink}  onClick={this.detailHandler} target="_blank" rel="noreferrer" style={{width:"26rem"}}  className="landing__10_text-flex--btn landing__10_text-flex--btnRev ">View Webinar</a>
+
                      </div>
                   </div>
                    <div className="landing__10_text_1">

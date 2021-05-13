@@ -14,6 +14,7 @@ import pr from "../../../assets/images/planeRoute.svg";
 import filledArrow from "../../../assets/images/filledArrow.svg";
 import coursemob from "../../../assets/images/coursemob.svg";
 import arrow1 from "../../../assets/images/arrow.svg";
+import pricement from "../../../assets/images/pricement.svg";
 
 class Pricing extends Component {
   state = {
@@ -111,8 +112,8 @@ class Pricing extends Component {
         {
           // head
         }
-        <h1 className="heading-primary landing__3_heading">
-            Investment
+        <h1 className="heading-primary landing__3_heading pricing__pricement">
+            <img src={pricement} alt=""/>
         </h1>
         <h4>
           Choose a plan that works best for you

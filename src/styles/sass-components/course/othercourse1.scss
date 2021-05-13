@@ -138,9 +138,10 @@
         //   color: $color-white;
         // }
         &--item{
-          font-size: 1.5rem;
+          font-size: 2rem;
           margin: 0rem 0rem;
-
+          flex-grow: 1;
+          text-align: center;
         }
       }
     }
@@ -313,6 +314,10 @@
       &-rating{
         & > *{
           margin-right: .5rem;
+          @include respond(tab-port){
+            height: 3rem;
+            margin-right: 0rem;
+          }
         }
       }
       &-review{
@@ -365,6 +370,7 @@
       display: none;
       @include respond(tab-port){
       display: flex;
+
       &--item{
         font-size: 2rem;
       }
@@ -373,5 +379,12 @@
          background: $color-exim-blue;
          border-radius: 8px;
       }
+  }
+}
+#review{
+  display: flex;
+  justify-content: space-between;
+  & svg{
+    height: 3rem;
   }
 }

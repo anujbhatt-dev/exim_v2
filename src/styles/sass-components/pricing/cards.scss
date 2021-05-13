@@ -1,5 +1,12 @@
 .pricing{
   background: $color-white;
+  &__pricement{
+    & img{
+      @include respond(tab-port){
+        height: 5rem;
+      }
+    }
+  }
   &__adv{
     width: 100vw;
     margin-left: -12rem;
@@ -31,6 +38,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        // border-radius: 32px;
+        // overflow: hidden;
         &-title{
           // background: $color-white;
           box-shadow: 0 0rem 5rem rgba($color-exim-grey,1);
@@ -38,7 +47,7 @@
           margin-top: -5rem;
           z-index: 100;
           padding: 3rem;
-          border-radius: 10px;
+          border-radius: 22px;
           & div{
             margin-bottom: 2rem;
             font-size: 2.3rem;
@@ -79,7 +88,7 @@
           width: 30rem;
           padding: 2rem;
           padding-bottom: 0;
-          border-radius: 8px;
+          border-radius: 22px;
           // width: 100%;
           // object-fit: cover;
         }

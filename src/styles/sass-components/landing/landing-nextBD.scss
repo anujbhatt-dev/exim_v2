@@ -1,14 +1,44 @@
 .landing__nextBD{
   text-align: center;
-  height: 45rem;
-  margin: 0 10rem;
+  height: 50rem;
+  margin: 0 5rem;
   box-shadow: 0 -5rem 15rem rgba($color-grey,.5);
   border-radius: 18px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: flex;
-  flex-direction: column;
   position: relative;
+  padding: 0 10rem;
+  @include respond(tab-port){
+      & > img{
+        display: none;
+      }
+  }
+  &_flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    & a{
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-exim-green;
+      font-size: 2.5rem;
+      margin-top: 2rem;
+      font-weight: bold;
+      @include respond(tab-port){
+          font-size: 2rem;
+      }
+      & img{
+        margin-right: 1rem;
+
+
+      }
+    }
+
+  }
   @include respond(tab-port){
        margin: 0 5rem;
   }
@@ -33,7 +63,7 @@
     color: #939393;
     font-weight: 400;
   }
-  & a{
+  & > a{
     color: $color-exim-blue;
     height: 5rem;
     display: flex;

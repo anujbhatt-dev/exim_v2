@@ -137,7 +137,7 @@ import "aos/dist/aos.css"
                          <div  className="course__div_row-head">
                              Export IMport Course
                          </div>
-                         <Link className="course__div_row-a" to="/courses/ExportImportCourse">Details <img src={arrow} alt=""/></Link>
+                         <Link className="course__div_row-a" to="/courses/ExportImprotCourse">Details <img src={arrow} alt=""/></Link>
                      </div>
                   </div>
                   <div className="course__wrapperMob">
@@ -158,7 +158,56 @@ import "aos/dist/aos.css"
                     <div className="course__other_text">
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
-                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsum eum possimus eligendi similique voluptates veniam cumque cupiditate accusantium, reiciendis laboriosam molestiae, beatae voluptate blanditiis quo itaque esse doloremque ipsa explicabo quibusdam. Vero ducimus voluptatibus accusamus nam nemo quibusdam voluptates exercitationem necessitatibus ex at et repellat cumque, optio, eius culpa delectus, laborum.</div>
+                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div>
+                        <div className="course__other_grids">
+                            <div className="course__other_grids-item">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="41.264" height="41.264" viewBox="0 0 41.264 41.264">
+                                 <path id="Icon_ionic-ios-time" data-name="Icon ionic-ios-time" d="M24.007,3.375A20.632,20.632,0,1,0,44.639,24.007,20.629,20.629,0,0,0,24.007,3.375ZM25.4,25.792a1.393,1.393,0,0,1-1.389,1.389H14.484a1.389,1.389,0,0,1,0-2.777h8.134V11.31a1.389,1.389,0,1,1,2.777,0Z" transform="translate(-3.375 -3.375)" fill="#525252"/>
+                               </svg>
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+                            </div>
+                            <div className="course__other_grids-item">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24.979" height="35.908" viewBox="0 0 24.979 35.908">
+                               <path id="Icon_map-book-store" data-name="Icon map-book-store" d="M31.459,31.1V4.562A3.132,3.132,0,0,0,28.337,1.44H9.6A3.132,3.132,0,0,0,6.48,4.562V34.225A3.132,3.132,0,0,0,9.6,37.347H28.337c1.45,0,3.122,0,3.122-1.561v-.781H10.383a1.566,1.566,0,0,1-1.561-1.561V31.1ZM10.383,7.685a.783.783,0,0,1,.781-.781H26.776a.783.783,0,0,1,.781.781V9.246a.783.783,0,0,1-.781.781H11.164a.783.783,0,0,1-.781-.781V7.685Zm0,6.245a.783.783,0,0,1,.781-.781H26.776a.783.783,0,0,1,.781.781v1.561a.783.783,0,0,1-.781.781H11.164a.783.783,0,0,1-.781-.781Z" transform="translate(-6.48 -1.44)" fill="#525252"/>
+                               </svg>
+
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+
+                            </div>
+
+
+                            <div className="course__other_grids-item">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="42.686" height="31.664" viewBox="0 0 42.686 31.664">
+                                 <g id="Group_1458" data-name="Group 1458" transform="translate(-778.632 -1328.541)">
+                                  <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M19.675,4.5H2.8A2.8,2.8,0,0,0,0,7.3V24.175a2.8,2.8,0,0,0,2.8,2.8H19.675a2.8,2.8,0,0,0,2.8-2.8V7.3A2.8,2.8,0,0,0,19.675,4.5ZM30.759,6.706l-6.414,4.424v9.211l6.414,4.418a1.876,1.876,0,0,0,2.95-1.51V8.216A1.877,1.877,0,0,0,30.759,6.706Z" transform="translate(787.609 1333.232)" fill="#525252"/>
+                                  <ellipse id="Ellipse_2296" data-name="Ellipse 2296" cx="8.5" cy="8" rx="8.5" ry="8" transform="translate(778.632 1328.541)" fill="red"/>
+                                 </g>
+                                 </svg>
+                                 <div className="course__other_grids-item--div">
+                                     <div><strong>6 weeks</strong></div>
+                                     <div>duration</div>
+                                 </div>
+                            </div>
+
+                            <div className="course__other_grids-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.694" height="35.592" viewBox="0 0 26.694 35.592">
+                                 <path id="Icon_ionic-md-bookmark" data-name="Icon ionic-md-bookmark" d="M30.862,4.5H11.583A3.718,3.718,0,0,0,7.875,8.208V40.092L21.222,34.16l13.347,5.932V8.208A3.718,3.718,0,0,0,30.862,4.5Z" transform="translate(-7.875 -4.5)" fill="#525252"/>
+                                 </svg>
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+                            </div>
+
+
+
+                        </div>
                         <Link  className="course__div_row-a" to="/courses/otherCourse1">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
@@ -173,7 +222,56 @@ import "aos/dist/aos.css"
                     <div className="course__other_text">
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
-                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsum eum possimus eligendi similique voluptates veniam cumque cupiditate accusantium, reiciendis laboriosam molestiae, beatae voluptate blanditiis quo itaque esse doloremque ipsa explicabo quibusdam. Vero ducimus voluptatibus accusamus nam nemo quibusdam voluptates exercitationem necessitatibus ex at et repellat cumque, optio, eius culpa delectus, laborum.</div>
+                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div>
+                        <div className="course__other_grids">
+                            <div className="course__other_grids-item">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="41.264" height="41.264" viewBox="0 0 41.264 41.264">
+                                 <path id="Icon_ionic-ios-time" data-name="Icon ionic-ios-time" d="M24.007,3.375A20.632,20.632,0,1,0,44.639,24.007,20.629,20.629,0,0,0,24.007,3.375ZM25.4,25.792a1.393,1.393,0,0,1-1.389,1.389H14.484a1.389,1.389,0,0,1,0-2.777h8.134V11.31a1.389,1.389,0,1,1,2.777,0Z" transform="translate(-3.375 -3.375)" fill="#525252"/>
+                               </svg>
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+                            </div>
+                            <div className="course__other_grids-item">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24.979" height="35.908" viewBox="0 0 24.979 35.908">
+                               <path id="Icon_map-book-store" data-name="Icon map-book-store" d="M31.459,31.1V4.562A3.132,3.132,0,0,0,28.337,1.44H9.6A3.132,3.132,0,0,0,6.48,4.562V34.225A3.132,3.132,0,0,0,9.6,37.347H28.337c1.45,0,3.122,0,3.122-1.561v-.781H10.383a1.566,1.566,0,0,1-1.561-1.561V31.1ZM10.383,7.685a.783.783,0,0,1,.781-.781H26.776a.783.783,0,0,1,.781.781V9.246a.783.783,0,0,1-.781.781H11.164a.783.783,0,0,1-.781-.781V7.685Zm0,6.245a.783.783,0,0,1,.781-.781H26.776a.783.783,0,0,1,.781.781v1.561a.783.783,0,0,1-.781.781H11.164a.783.783,0,0,1-.781-.781Z" transform="translate(-6.48 -1.44)" fill="#525252"/>
+                               </svg>
+
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+
+                            </div>
+
+
+                            <div className="course__other_grids-item">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="42.686" height="31.664" viewBox="0 0 42.686 31.664">
+                                 <g id="Group_1458" data-name="Group 1458" transform="translate(-778.632 -1328.541)">
+                                  <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M19.675,4.5H2.8A2.8,2.8,0,0,0,0,7.3V24.175a2.8,2.8,0,0,0,2.8,2.8H19.675a2.8,2.8,0,0,0,2.8-2.8V7.3A2.8,2.8,0,0,0,19.675,4.5ZM30.759,6.706l-6.414,4.424v9.211l6.414,4.418a1.876,1.876,0,0,0,2.95-1.51V8.216A1.877,1.877,0,0,0,30.759,6.706Z" transform="translate(787.609 1333.232)" fill="#525252"/>
+                                  <ellipse id="Ellipse_2296" data-name="Ellipse 2296" cx="8.5" cy="8" rx="8.5" ry="8" transform="translate(778.632 1328.541)" fill="red"/>
+                                 </g>
+                                 </svg>
+                                 <div className="course__other_grids-item--div">
+                                     <div><strong>6 weeks</strong></div>
+                                     <div>duration</div>
+                                 </div>
+                            </div>
+
+                            <div className="course__other_grids-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.694" height="35.592" viewBox="0 0 26.694 35.592">
+                                 <path id="Icon_ionic-md-bookmark" data-name="Icon ionic-md-bookmark" d="M30.862,4.5H11.583A3.718,3.718,0,0,0,7.875,8.208V40.092L21.222,34.16l13.347,5.932V8.208A3.718,3.718,0,0,0,30.862,4.5Z" transform="translate(-7.875 -4.5)" fill="#525252"/>
+                                 </svg>
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+                            </div>
+
+
+
+                        </div>
                         <Link  className="course__div_row-a" to="/courses/otherCourse2">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
@@ -188,7 +286,56 @@ import "aos/dist/aos.css"
                     <div className="course__other_text">
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
-                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsum eum possimus eligendi similique voluptates veniam cumque cupiditate accusantium, reiciendis laboriosam molestiae, beatae voluptate blanditiis quo itaque esse doloremque ipsa explicabo quibusdam. Vero ducimus voluptatibus accusamus nam nemo quibusdam voluptates exercitationem necessitatibus ex at et repellat cumque, optio, eius culpa delectus, laborum.</div>
+                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div>
+                        <div className="course__other_grids">
+                            <div className="course__other_grids-item">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="41.264" height="41.264" viewBox="0 0 41.264 41.264">
+                                 <path id="Icon_ionic-ios-time" data-name="Icon ionic-ios-time" d="M24.007,3.375A20.632,20.632,0,1,0,44.639,24.007,20.629,20.629,0,0,0,24.007,3.375ZM25.4,25.792a1.393,1.393,0,0,1-1.389,1.389H14.484a1.389,1.389,0,0,1,0-2.777h8.134V11.31a1.389,1.389,0,1,1,2.777,0Z" transform="translate(-3.375 -3.375)" fill="#525252"/>
+                               </svg>
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+                            </div>
+                            <div className="course__other_grids-item">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24.979" height="35.908" viewBox="0 0 24.979 35.908">
+                               <path id="Icon_map-book-store" data-name="Icon map-book-store" d="M31.459,31.1V4.562A3.132,3.132,0,0,0,28.337,1.44H9.6A3.132,3.132,0,0,0,6.48,4.562V34.225A3.132,3.132,0,0,0,9.6,37.347H28.337c1.45,0,3.122,0,3.122-1.561v-.781H10.383a1.566,1.566,0,0,1-1.561-1.561V31.1ZM10.383,7.685a.783.783,0,0,1,.781-.781H26.776a.783.783,0,0,1,.781.781V9.246a.783.783,0,0,1-.781.781H11.164a.783.783,0,0,1-.781-.781V7.685Zm0,6.245a.783.783,0,0,1,.781-.781H26.776a.783.783,0,0,1,.781.781v1.561a.783.783,0,0,1-.781.781H11.164a.783.783,0,0,1-.781-.781Z" transform="translate(-6.48 -1.44)" fill="#525252"/>
+                               </svg>
+
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+
+                            </div>
+
+
+                            <div className="course__other_grids-item">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="42.686" height="31.664" viewBox="0 0 42.686 31.664">
+                                 <g id="Group_1458" data-name="Group 1458" transform="translate(-778.632 -1328.541)">
+                                  <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M19.675,4.5H2.8A2.8,2.8,0,0,0,0,7.3V24.175a2.8,2.8,0,0,0,2.8,2.8H19.675a2.8,2.8,0,0,0,2.8-2.8V7.3A2.8,2.8,0,0,0,19.675,4.5ZM30.759,6.706l-6.414,4.424v9.211l6.414,4.418a1.876,1.876,0,0,0,2.95-1.51V8.216A1.877,1.877,0,0,0,30.759,6.706Z" transform="translate(787.609 1333.232)" fill="#525252"/>
+                                  <ellipse id="Ellipse_2296" data-name="Ellipse 2296" cx="8.5" cy="8" rx="8.5" ry="8" transform="translate(778.632 1328.541)" fill="red"/>
+                                 </g>
+                                 </svg>
+                                 <div className="course__other_grids-item--div">
+                                     <div><strong>6 weeks</strong></div>
+                                     <div>duration</div>
+                                 </div>
+                            </div>
+
+                            <div className="course__other_grids-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.694" height="35.592" viewBox="0 0 26.694 35.592">
+                                 <path id="Icon_ionic-md-bookmark" data-name="Icon ionic-md-bookmark" d="M30.862,4.5H11.583A3.718,3.718,0,0,0,7.875,8.208V40.092L21.222,34.16l13.347,5.932V8.208A3.718,3.718,0,0,0,30.862,4.5Z" transform="translate(-7.875 -4.5)" fill="#525252"/>
+                                 </svg>
+                               <div className="course__other_grids-item--div">
+                                   <div><strong>6 weeks</strong></div>
+                                   <div>duration</div>
+                               </div>
+                            </div>
+
+
+
+                        </div>
                         <Link  className="course__div_row-a" to="/courses/otherCourse3">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
@@ -196,6 +343,8 @@ import "aos/dist/aos.css"
                         <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse3">View Details</Link>
                     </div>
                 </div>
+
+
 
          </div>
       )

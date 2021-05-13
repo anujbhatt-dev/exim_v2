@@ -5,6 +5,7 @@ import Pricing from "./pricing/pricing"
 import AboutUs from "./aboutUs/aboutUs"
 import Course from "./course/course"
 import OtherCourse1 from "./course/othercourse1/othercourse1"
+import OtherCourse0 from "./course/othercourse0/othercourse0"
 import OtherCourse2 from "./course/othercourse2/othercourse2"
 import OtherCourse3 from "./course/othercourse3/othercourse3"
 
@@ -102,6 +103,9 @@ class Layout extends Component {
 
               <Route exact  path="/courses">
                   <Course page="COURSES"  url={this.state.url}/>
+              </Route>
+              <Route exact  path="/courses/ExportImprotCourse">
+                  <OtherCourse0 page="COURSES"  url={this.state.url}/>
               </Route>
               <Route exact  path="/courses/otherCourse1">
                   <OtherCourse1 page="COURSES"  url={this.state.url}/>

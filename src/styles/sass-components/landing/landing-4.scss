@@ -33,18 +33,27 @@
       left:32%;
       // animation: slide 3s linear 2;
       animation-fill-mode: forwards;
+      @include respond(tab-port){
+         left:0%;
+      }
     }
     &__2{
       left:-19.5%;
       top: calc((100%/3));
       // animation: slide-reverse 3s linear 2;
       animation-fill-mode: forwards;
+      @include respond(tab-port){
+         left:0%;
+      }
     }
     &__3{
       left:18%;
       top: calc((100%/3)*2);
       // animation: slide 3s linear 2;
       animation-fill-mode: forwards;
+      @include respond(tab-port){
+         left:0%;
+      }
     }
   }
   &_1,&_2,&_3{
