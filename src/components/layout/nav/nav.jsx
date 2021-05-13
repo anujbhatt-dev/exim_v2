@@ -14,7 +14,7 @@ class Navigation extends Component {
 
   componentDidMount = () => {
     let path = window.location.pathname + "";
-    if (path.indexOf("courses") !== -1 ) this.selectedNav(3);
+    if (path.indexOf("course") !== -1 ) this.selectedNav(3);
     else if (path.indexOf("pricing") !== -1) this.selectedNav(2);
      else if (path.indexOf("about") !== -1) this.selectedNav(5);
     else if (path.indexOf("blog") !== -1 || window.location.pathname.length>3 ) this.selectedNav(4);
@@ -24,7 +24,7 @@ class Navigation extends Component {
       // console.log("on route change");
 
       let path = window.location.pathname + "";
-    if (path.indexOf("courses") !== -1 ) this.selectedNav(3);
+    if (path.indexOf("course") !== -1 ) this.selectedNav(3);
     else if (path.indexOf("pricing") !== -1) this.selectedNav(2);
      else if (path.indexOf("about") !== -1) this.selectedNav(5);
     else if (path.indexOf("blog") !== -1 || window.location.pathname.length>3 ) this.selectedNav(4);
