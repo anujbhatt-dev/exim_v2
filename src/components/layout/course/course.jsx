@@ -135,7 +135,7 @@ import "aos/dist/aos.css"
 
                      <div className="course__div_row">
                          <div  className="course__div_row-head">
-                             Export IMport Course
+                             {/* Export IMport Course */}
                          </div>
                          <Link className="course__div_row-a" to="/exportimprotcourse">Details <img src={arrow} alt=""/></Link>
                      </div>

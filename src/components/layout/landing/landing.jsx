@@ -96,7 +96,7 @@ import fire from "../firebase_config"
 
     state={
 
-        eportValue:6456744,
+        eportValue:"$314.31B",
         numbersVisible:false,
         webinarSubmitted:false,
        webinar:{ day:"sunday",
@@ -398,7 +398,7 @@ import fire from "../firebase_config"
                   <div className="landing__2_text">
                        <div className="heading-primary">Exim education app</div>
                        <div className="landing__2_text-small">
-                             Click on the “Download” button and be part of exim world. Enjoy 2 export-import videos for free,
+                             Click on the “Download” button and be part of exim world. Enjoy export-import videos,
                               and get a peek on new terms and ways to export and import. Congratulations in advance for
                               taking the first step towards your dream :)
                         </div>
@@ -453,7 +453,7 @@ import fire from "../firebase_config"
                             </li>
                             <li>
                                  <img data-aos-once="true" data-aos="fade-right" data-aos-duration="1500" src={clock} alt=""/>
-                                 <span>Duration 1 month</span>
+                                 <span>Duration 6 weeks</span>
                             </li>
                             <li>
                                  <img data-aos-once="true" data-aos="fade-right" data-aos-duration="1500" src={zoom} alt=""/>
@@ -461,7 +461,7 @@ import fire from "../firebase_config"
                             </li>
                             <li>
                                  <img data-aos-once="true" data-aos="fade-right" data-aos-duration="1500" src={crown} alt=""/>
-                                 <span>Premium helpdesk expert</span>
+                                 <span>Premium help desk</span>
                             </li>
                           </ul>
                       </div>
@@ -471,7 +471,7 @@ import fire from "../firebase_config"
                           <ul>
                             <li>
                                  <img data-aos-once="true" data-aos="fade-right" data-aos-duration="1500" src={video} alt=""/>
-                                 <span>Video tutorials</span>
+                                 <span>Live classes</span>
                             </li>
                             <li>
                                  <img data-aos-once="true" data-aos="fade-right" data-aos-duration="1500" src={cell} alt=""/>
@@ -591,7 +591,7 @@ import fire from "../firebase_config"
                       <div className="landing__4_1-text">
                            <div className="landing__4_1-text--big heading-primary">Sign up for growth and development</div>
                            <div className="landing__4_1-text--small"></div>
-                           <div className="landing__4_1-text--smaller">Download our <span>mobile application</span> and watch the first<br/>two videos for free, and get a peek on new terms<br/>and ways to export and import.</div>
+                           <div className="landing__4_1-text--smaller">We don’t just teach but make sure to mould you <br/> to be the next exporter or importer.</div>
                       </div>
                       <img  className="landing__4_1-image" src={s1} alt=""/>
                   </div>
