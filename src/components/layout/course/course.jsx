@@ -155,6 +155,7 @@ import "aos/dist/aos.css"
                 <div className="course__other">
                     <img className="course__other_img"  src={otherCourse1} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
+                    <div className="course__other_title">course title</div>
                     <div className="course__other_text">
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
@@ -219,6 +220,7 @@ import "aos/dist/aos.css"
                 <div className="course__other">
                     <img className="course__other_img"  src={otherCourse1} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
+                    <div className="course__other_title">course title</div>
                     <div className="course__other_text">
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
@@ -283,6 +285,7 @@ import "aos/dist/aos.css"
                 <div className="course__other">
                     <img className="course__other_img"  src={otherCourse1} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
+                    <div className="course__other_title">course title</div>
                     <div className="course__other_text">
                         <div className="course__other_text-title">Regulation Courses
                         <br/>Export Import</div>
