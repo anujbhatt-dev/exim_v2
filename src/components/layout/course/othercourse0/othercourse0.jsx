@@ -157,8 +157,7 @@ class OtherCourse1 extends Component{
                     <div className="course__wrapperMob">
                          <img src={coursemob} alt=""/>
                          <div className="course__wrapperMob_flex">
-                             <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                             <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/courses/otherCourse1">View Details</Link>
+                             <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>                             
                          </div>
                          <h1 className="heading-primary landing__3_heading">Introduction to international trade</h1>
                          <div className="course__wrapperMob_grid">
