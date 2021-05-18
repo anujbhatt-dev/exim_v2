@@ -510,7 +510,7 @@ import fire from "../firebase_config"
                             +91 8517885555
                           </a>
                       </div>
-                      <Link to="/courses" className="landing__nextBD_btn">
+                      <Link to="/about" className="landing__nextBD_btn">
                       <span>Join Today</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="81.992" height="14.514" viewBox="0 0 81.992 14.514">
                               <path id="Icon_awesome-long-arrow-alt-right" data-name="Icon awesome-long-arrow-alt-right" d="M17.188,14.879H-55.177a.791.791,0,0,0-.791.791v3.691a.791.791,0,0,0,.791.791H17.188v3.036a1.582,1.582,0,0,0,2.7,1.119l5.672-5.672a1.582,1.582,0,0,0,0-2.237l-5.672-5.672a1.582,1.582,0,0,0-2.7,1.119Z" transform="translate(55.968 -10.258)" fill="#0062ff"/>

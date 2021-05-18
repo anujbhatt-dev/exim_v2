@@ -20,35 +20,35 @@ class Pricing extends Component {
   state = {
     courses:[
       {
-        title:"Parties and places involved in import/ export",
+        title:"Introduction to international trade.",
         lessons:"140 mins",
         locked:false
       },
       {
-        title:"Types of Transportation, Container and packaging",
+        title:"Finding market and product selection.",
         lessons:"80 mins",
         locked:true
       },
       {
-        title:"Basic Registration for Exim",
+        title:"Export documentation.",
         lessons:"110 mins",
         locked:true
       },
       {
-        title:"Export Incentives",
+        title:"Exim procedure and commercial terms.",
         lessons:"30 mins",
         locked:true
       },
       {
-        title:"Incoterms",
+        title:"Government incentives &Initiatives.",
         lessons:"10 mins",
         locked:true
       },
       {
-        title:"Basic Terms",
+        title:"Risk management and payment terms.",
         lessons:"60 mins",
         locked:true
-      }
+      },
     ],
     faq: [
       {
@@ -338,7 +338,7 @@ class Pricing extends Component {
              </div>
         </div>
         <div className="pricing__back">
-          <Link className="pricing__course_btn" to="/courses"><span>View Details</span><img src={filledArrow} alt=""/></Link>
+          <Link className="pricing__course_btn" to="/export_import_course"><span>View Details</span><img src={filledArrow} alt=""/></Link>
         </div>
 
         {
@@ -347,43 +347,41 @@ class Pricing extends Component {
 
         <div className="pricing__adv">
            <h1 className="heading-primary landing__3_heading">Advance course</h1>
-           <p className="pricing__adv_subH">Choose a plan that works best for you
+           <p className="pricing__adv_subH">Choose the course that works best for you
            <br/>or your team</p>
            <div className="pricing__adv_flex">
                <div className="pricing__adv_flex-item">
                   <img src={ac1} alt=""/>
                   <div className="pricing__adv_flex-item-title">
                       <div>
-                          Regulation On
-                          <br/>Transport Of
-                          <br/>Dangerous Goods
-                          <br/>By Sea IMDG Code
+                      Regulation on Transport of Dangerous Goods
                       </div>
-                      <Link className="pricing__adv_flex-item-btn" to="/courses"><span>Details</span> <img src={arrow1} alt=""/></Link>
+                      <Link className="pricing__adv_flex-item-btn" to="/regulation_on_transport_of_dangerous_goods_course"><span>Details</span> <img src={arrow1} alt=""/></Link>
                   </div>
                </div>
                <div className="pricing__adv_flex-item">
                   <img src={ac2} alt=""/>
                   <div className="pricing__adv_flex-item-title">
                       <div>
-                          Regulation On
-                          <br/>Transport Of
-                          <br/>Dangerous Goods
-                          <br/>By Sea IMDG Code.
+                      Certification in
+                     Warehousing
+                     <br/>
+                     <br/>
                       </div>
-                      <Link className="pricing__adv_flex-item-btn" to="/courses"><span>Details</span> <img src={arrow1} alt=""/></Link>
+                      <Link className="pricing__adv_flex-item-btn" to="/certification_in_warehousing_course"><span>Details</span> <img src={arrow1} alt=""/></Link>
                   </div>
                </div>
                <div className="pricing__adv_flex-item">
                   <img src={ac3} alt=""/>
                   <div className="pricing__adv_flex-item-title">
                       <div>
-                          Regulation On
-                          <br/>Transport Of
-                          <br/>Dangerous Goods
-                          <br/>By Sea IMDG Code
+                      5 week course,
+                      <br/>
+                      Launching soon
+                      <br/>
+                      <br/>
                       </div>
-                      <Link className="pricing__adv_flex-item-btn" to="/courses"><span>Details</span> <img src={arrow1} alt=""/></Link>
+                      <Link className="pricing__adv_flex-item-btn" to="/about"><span>Details</span> <img src={arrow1} alt=""/></Link>
                   </div>
                </div>
            </div>

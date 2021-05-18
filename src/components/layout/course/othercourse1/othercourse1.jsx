@@ -18,49 +18,33 @@ class OtherCourse1 extends Component{
   state={
     courses:[
       {
-        title:"Parties and places involved in import/ export",
-        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum doloremque incidunt magnam cumque expedita consequuntur voluptates. Illo porro nesciunt, amet, voluptate itaque, alias commodi eius quia nihil placeat soluta.",
-        locked:false,
+        title:"Regulation on Transport of Dangerous Goods by Air- IATA DGR",
+        lessons:["Shippers, Forwarders, Ground handling agents and Airlines- 6 days",
+        "Packers, Forwarders operations staff, Ground handling agent operations staff and airline warehouse management staff, Airport/airline security agents- 1 to 2 days",
+        ],
+         locked:false,
         duration:"140 mins",
         subtitle:"Lorem ipsum dolor sit amet"
       },
       {
-        title:"Types of Transportation, Container and packaging",
-        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis officia, aspernatur error, praesentium ab animi et soluta eos laudantium velit placeat sit id eligendi a dicta eaque hic. Eos, optio!",
+        title:"Regulation on Transport of Dangerous Goods by Sea- IMDG",
+        lessons:["Shippers, Forwarders, NVOCC, Shipping lines, Shipping agents- 3 to 4 days",
+        "Awareness course on the handling of Dangerous Goods- 1 to 2 days",
+        ],
         locked:false,
         duration:"80 mins",
         subtitle:"Lorem ipsum dolor sit amet"
       },
       {
-        title:"Basic Registration for Exim",
-        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nam rem, nemo magnam tempore commodi reiciendis molestiae ullam vero. Fuga magnam qui perferendis, molestiae ad minima nulla culpa, consequuntur dolore.",
+        title:"Code Regulation on Transport of Dangerous Goods by Road",
+        lessons:[],
         locked:false,
         duration:"110 mins",
         subtitle:"Lorem ipsum dolor sit amet"
       },
-      {
-        title:"Export Incentives",
-        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quas saepe aspernatur cumque, voluptatem totam. Sit tempora illo, autem inventore, impedit eaque aliquam fugiat quam eius, pariatur modi praesentium ut.",
-        locked:false,
-        duration:"30 mins",
-        subtitle:"Lorem ipsum dolor sit amet"
-      },
-      {
-        title:"Incoterms",
-        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime inventore, distinctio, laborum neque fugiat repellendus eum recusandae, quam voluptatem voluptate consequuntur doloremque eaque accusamus, rerum blanditiis impedit officia! Itaque, non?",
-        locked:false,
-        duration:"10 mins",
-        subtitle:"Lorem ipsum dolor sit amet"
-      },
-      {
-        title:"Basic Terms",
-        lessons:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptates tenetur sint omnis molestias perferendis explicabo quae, veniam, assumenda, minima aliquam cupiditate aut quisquam corporis ducimus quod enim voluptatum dolore.",
-        locked:false,
-        duration:"60 mins",
-        subtitle:"Lorem ipsum dolor sit amet"
-      }
+     
     ],
-    panel:"lessonn",
+    panel:"lesson",
     reviews:[
       {
         review:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit, aliquid. Blanditiis expedita culpa vitae numquam laborum consectetur quam illo, dolore, excepturi perferendis voluptatibus, saepe non! Ullam modi voluptatem saepe omnis amet dolore facilis illo! Veniam tempore quas esse excepturi id fugit repellendus maiores consequuntur ipsam, dolore magni deleniti fuga velit recusandae! Repudiandae itaque unde sint. Aliquid quam, impedit ullam delectus deleniti voluptas iste quae explicabo quia sint mollitia, eveniet itaque in, atque nam asperiores est ea, beatae assumenda aliquam. Soluta labore saepe quos debitis iusto nam assumenda ipsa, dolor fugit aspernatur maxime eos necessitatibus voluptatem exercitationem quia, laborum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia molestiae in fugiat totam. Animi tenetur possimus quod atque mollitia ab ratione at optio eius, quaerat ullam dolore, ea amet saepe adipisci fugit voluptas quis, enim reiciendis. Possimus aperiam doloremque quibusdam ea, sunt sapiente dolores fuga quae quod, vero est consequuntur voluptatem ut! Eligendi deleniti ea dolorem sint rerum explicabo porro vel aut provident maxime harum, quisquam, numquam quod nihil natus atque officiis eius, quas alias distinctio vitae. Optio cupiditate ducimus eaque. Possimus, deserunt, alias. Incidunt laboriosam distinctio ipsa, voluptatum libero itaque animi qui provident voluptates maiores quibusdam, minus, excepturi quam deleniti veritatis explicabo odio quae cupiditate impedit placeat molestias laudantium! Itaque, distinctio ut molestias illo quas suscipit eos aliquid accusantium, dolore nihil aut consequatur ex possimus fugit laborum numquam, aliquam consectetur harum saepe. Laudantium suscipit, at eveniet. Similique, repellendus modi voluptates ullam. Iusto recusandae deserunt, et, quas rerum quasi ut voluptatibus sit delectus corporis temporibus sapiente odit autem, beatae. Labore consectetur harum voluptatum dolorum quam, sequi obcaecati nulla minima modi voluptatem quia, quibusdam dolorem qui sit porro, veniam nisi aliquam et. Itaque, voluptatem obcaecati iste atque dignissimos enim aut corporis, voluptates quod sunt adipisci. Ab reiciendis accusantium, rerum consequuntur?",
@@ -81,7 +65,20 @@ class OtherCourse1 extends Component{
         name:"anuj bhatt"
       },
     ],
-    details:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod, sint sequi mollitia. Maxime molestias omnis sapiente non quis, dolores, laboriosam reiciendis, eius vero mollitia distinctio nisi repellendus dolore, pariatur dolorem iure numquam. Porro, laboriosam. Dicta nobis nulla, alias sed mollitia, possimus, facere repudiandae pariatur molestiae nostrum nesciunt numquam velit laudantium? Tempora dolorum natus odio deleniti dolore, eveniet animi iste harum cumque debitis? Repellat excepturi, ipsam. Eum ullam cumque dicta optio dolor architecto sint possimus aut suscipit quisquam saepe, enim similique eligendi adipisci perferendis magnam quia debitis deserunt eveniet asperiores eaque. Obcaecati, ratione velit explicabo delectus. Vitae fuga rem, tempore velit ullam qui animi et vel possimus consequuntur. Eius pariatur, quod modi numquam. Voluptatem, beatae. Delectus libero, cupiditate sunt nostrum at expedita nihil ut reiciendis eligendi atque in ea, animi numquam odio eos exercitationem veritatis alias labore voluptatibus adipisci ullam assumenda? Necessitatibus esse laudantium cum placeat nam, illo alias tenetur fugiat a? Sapiente placeat amet alias nisi, nihil culpa dolores officia, doloribus in, eaque, incidunt maxime. Molestiae nisi, error itaque sint? Tempore, inventore nemo soluta commodi reiciendis quidem, molestiae aliquam. Vel labore fugit, vitae optio iure eveniet, repellendus quod recusandae ducimus dolor eaque beatae. Fugit nisi blanditiis natus ea quas repellendus odit assumenda dicta tempore suscipit dolorum totam accusantium nobis earum veritatis, explicabo alias a commodi ad mollitia fugiat, unde laboriosam officiis! Voluptatum, tempora, facilis placeat excepturi accusantium iste cupiditate assumenda quod inventore quo repellendus natus deserunt sunt magnam similique, nemo provident laudantium voluptatem possimus consectetur mollitia aut obcaecati? Architecto laboriosam nihil consequatur alias saepe, iure doloribus libero! Quis quo fuga dignissimos velit optio, beatae reprehenderit voluptates similique est ad magnam molestiae, ipsam, tenetur impedit nostrum, repudiandae in eos. Unde quasi perspiciatis laboriosam? Sequi excepturi distinctio explicabo cum, in non, delectus ducimus, fuga eveniet minima culpa. Necessitatibus repudiandae, dolorum odio quas illum incidunt quos maiores eaque. Dolorum ipsa repellat quasi ipsum eos officiis voluptates quis suscipit nulla aperiam dolores, facilis in tempora corporis atque tenetur architecto quam sit, odit dicta, accusamus totam, voluptatem quos saepe? Odio qui possimus laborum, eveniet quia placeat explicabo corporis! Asperiores totam facere distinctio sed recusandae possimus cumque nobis ut temporibus id et deleniti eligendi illum, vel ipsam quam suscipit aliquam pariatur sequi eos. Reprehenderit nihil adipisci quo dolorem quae molestiae velit maiores, voluptatem, sint at, ex quidem fugit. Qui quas, cum quidem sapiente explicabo aperiam dignissimos repellendus ducimus tempora voluptates magni praesentium amet laboriosam dolore temporibus quasi esse repudiandae, illum quod quaerat. Fugit excepturi quo, saepe officia sapiente nemo! Aliquam ipsa dolore temporibus impedit veniam eligendi suscipit magni alias iste adipisci esse maxime nisi et, officia ut. Quod in dolores totam nesciunt quis pariatur perferendis ab iusto quibusdam at. Obcaecati amet veritatis ex, magnam ea iste, eius consequatur molestias cupiditate illum quod voluptatum quis minus consectetur sequi voluptatibus ullam atque ut est. Excepturi modi ipsam esse nam. Eum error sequi ratione consectetur modi neque asperiores aspernatur nesciunt assumenda perspiciatis! Tempora, ab soluta placeat. Voluptatibus sit tempora ducimus cum iste dolore odio molestias! Quis, ipsam, illum!"
+    detail:"Exim Education is an export-import"+
+   "training centre. Exim Education has"+
+   "taken initiative to make people aware  of various opportunities in the"+
+   "International market with its unique"+
+   "way of training the participants. We do"+
+   "not just educate but make our"+
+   "students career-ready, by simple"+
+   "video courses you’ll get an in-depth of"+
+   "international trade. Also, a live-student"+
+   " teacher interactive session will"+
+   "smoothen every topic and solve the"+
+   "doubts you have relating to variant"+
+   "topics in export-import."
+  
   }
 
   componentDidMount = () => {
@@ -97,7 +94,7 @@ class OtherCourse1 extends Component{
     // alert("otherCourse1__Wrapper_row1--"+(((p+1)%3)===0?"3":(p+1)%3));
     // alert("otherCourse1__Wrapper_row1--"+(((p+2)%3)===0?"3":(p+2)%3));
     this.setState({
-      panel:p===1?"lessonn":p===2?"details":"reviews"
+      panel:p===1?"lesson":p===2?"detail":"reviews"
     })
     $(".otherCourse1__Wrapper_row1--"+(((p%3)===0)?"3":p)).css({"order":"-3"});
 
@@ -110,7 +107,7 @@ class OtherCourse1 extends Component{
     // alert("otherCourse1__Wrapper_row1--"+(((p+1)%3)===0?"3":(p+1)%3));
     // alert("otherCourse1__Wrapper_row1--"+(((p+2)%3)===0?"3":(p+2)%3));
     this.setState({
-      panel:p===1?"lessonn":p===2?"details":"reviews"
+      panel:p===1?"lesson":p===2?"detail":"reviews"
     })
   }
 
@@ -135,10 +132,12 @@ class OtherCourse1 extends Component{
 
       return (
            <div className="otherCourse1">
-               <h1 className="heading-primary landing__3_heading">course details</h1>
+               <h1 className="heading-primary landing__3_heading">Regulation on Transport
+of Dangerous Goods</h1>
+<br/>
                <div className="course__div">
-                    <img className="course__div_route" src={pr} alt=""/>
-                   <div className="course__wrapper">
+                    {/* <img className="course__div_route" src={pr} alt=""/> */}
+                   {/* <div className="course__wrapper">
                        {
                          this.state.courses.map((course,i)=>{
                            return <div  className={"course__wrapper_box "+"course__wrapper_box-"+(i+1)}>
@@ -153,11 +152,11 @@ class OtherCourse1 extends Component{
                                    </div>
                          })
                        }
-                    </div>
+                    </div> */}
                     <div className="course__wrapperMob">
                          <img src={coursemob} alt=""/>
                          <div className="course__wrapperMob_flex">
-                             <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>                             
+                             <Link className="course__wrapperMob_flex-a" to="/about">Buy</Link>                             
                          </div>
                          <h1 className="heading-primary landing__3_heading">Introduction to international trade</h1>
                          <div className="course__wrapperMob_grid">
@@ -167,7 +166,7 @@ class OtherCourse1 extends Component{
                                   </svg>
 
                                   <div className="course__wrapperMob_grid-item--div">
-                                      <div><strong>6 weeks</strong></div>
+                                      <div><strong>14 weeks</strong></div>
                                       <div>duration</div>
                                   </div>
 
@@ -180,8 +179,8 @@ class OtherCourse1 extends Component{
                                   </svg>
 
                                   <div className="course__wrapperMob_grid-item--div">
-                                      <div><strong>6 weeks</strong></div>
-                                      <div>duration</div>
+                                      <div><strong>18 modules</strong></div>
+                                      {/* <div>duration</div> */}
                                   </div>
 
                                </div>
@@ -195,8 +194,8 @@ class OtherCourse1 extends Component{
                                     </g>
                                     </svg>
                                     <div className="course__wrapperMob_grid-item--div">
-                                        <div><strong>6 weeks</strong></div>
-                                        <div>duration</div>
+                                        <div><strong>Live Lecture</strong></div>
+                                        {/* <div>duration</div> */}
                                     </div>
                                </div>
 
@@ -205,8 +204,8 @@ class OtherCourse1 extends Component{
                                     <path id="Icon_ionic-md-bookmark" data-name="Icon ionic-md-bookmark" d="M30.862,4.5H11.583A3.718,3.718,0,0,0,7.875,8.208V40.092L21.222,34.16l13.347,5.932V8.208A3.718,3.718,0,0,0,30.862,4.5Z" transform="translate(-7.875 -4.5)" fill="#525252"/>
                                     </svg>
                                   <div className="course__wrapperMob_grid-item--div">
-                                      <div><strong>6 weeks</strong></div>
-                                      <div>duration</div>
+                                      <div><strong>Certification</strong></div>
+                                      {/* <div>duration</div> */}
                                   </div>
                                </div>
                          </div>
@@ -220,21 +219,21 @@ class OtherCourse1 extends Component{
                                 Lesson
                          </div>
                          <div onClick={()=>{this.panelHandler(2)}} className="otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2">
-                                Details
+                                Detail
                          </div>
                          <div onClick={()=>{this.panelHandler(3)}} className="otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--3">
                                 Reviews
                          </div>
                    </div>
                    <div className="otherCourse1__Wrapper_row1 otherCourse1__Wrapper_row2">
-                         <div onClick={()=>{this.panelHandlermob(1)}} className={this.state.panel==="lessonn"?"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--1 otherCourse1__Wrapper_row2--selected":"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--1"}>
+                         <div onClick={()=>{this.panelHandlermob(1)}} className={this.state.panel==="lesson"?"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--1 otherCourse1__Wrapper_row2--selected":"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--1"}>
                                 Lesson
                          </div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="1" height="19" viewBox="0 0 1 19">
                             <line id="Line_2" data-name="Line 2" y2="19" transform="translate(0.5)" fill="none" stroke="#bababa" stroke-width="1"/>
                          </svg>
-                         <div onClick={()=>{this.panelHandlermob(2)}} className={this.state.panel==="details"?"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 otherCourse1__Wrapper_row2--selected":"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 "}>
-                                Details
+                         <div onClick={()=>{this.panelHandlermob(2)}} className={this.state.panel==="detail"?"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 otherCourse1__Wrapper_row2--selected":"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 "}>
+                                Detail
                          </div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="1" height="19" viewBox="0 0 1 19">
                            <line id="Line_2" data-name="Line 2" y2="19" transform="translate(0.5)" fill="none" stroke="#bababa" stroke-width="1"/>
@@ -265,15 +264,24 @@ class OtherCourse1 extends Component{
 
 
                    <div className="middle">
-                       {this.state.panel==="lessonn"?
+                       {this.state.panel==="lesson"?
                          <div className="middle__lesson">
                               {this.state.courses.map((item,i)=>{
                                 return <div className="middle__lesson_item">
                                           <img src={otherCourse1} alt=""/>
                                           <div className="middle__lesson_item-middle">
                                               <div className="title">{item.title}</div>
-                                              <div className="subtitle">{item.subtitle}</div>
-                                              <div className="lesson">{item.locked?item.lessons:item.lessons.substring(0,51)}</div>
+                                              {/* <div className="subtitle">{item.subtitle}</div> */}
+                                              <div className="lesson">{item.locked?
+                                                <ol>
+
+                                                {item.lessons.map(l=>
+                                                  <li>
+                                                    {l}
+                                                  </li>)}
+   
+                                              </ol>
+                                              :null}</div>
                                           </div>
                                           <div onClick={()=>{this.unlockHandler(i)}} className="middle__lesson_item-right">
                                               <span>detail</span>
@@ -284,9 +292,9 @@ class OtherCourse1 extends Component{
                                        </div>
                               })}
                          </div>
-                         :this.state.panel==="details"?
+                         :this.state.panel==="detail"?
                          <div className="middle__detail">
-                              {this.state.details}
+                              {this.state.detail}
                          </div>:
                          <div className="middle__review">
                               {this.state.reviews.map((review,i)=>{
@@ -329,14 +337,23 @@ class OtherCourse1 extends Component{
                        }
                    </div>
                    <div className="middleMob">
-                             {this.state.panel==="lessonn"?
+                             {this.state.panel==="lesson"?
                                <div className="middleMob__lesson">
                                {this.state.courses.map((item,i)=>{
                                  return <div className="middle__lesson_item">
                                            <img src={otherCourse1} alt=""/>
                                            <div className="middle__lesson_item-middle">
                                                <div className="title">{item.title}</div>
-                                               <div className="lesson">{item.locked?item.lessons:null}</div>
+                                               <div className="lesson">{item.locked?
+                                                 <ol>
+
+                                                 {item.lessons.map(l=>
+                                                   <li>
+                                                     {l}
+                                                   </li>)}
+    
+                                               </ol>
+                                               :null}</div>
                                            </div>
                                            <div onClick={()=>{this.unlockHandler(i)}} className="middle__lesson_item-right">
                                               {item.locked
@@ -355,9 +372,9 @@ class OtherCourse1 extends Component{
                                         </div>
                                })}
                          </div>
-                         :this.state.panel==="details"?
+                         :this.state.panel==="detail"?
                          <div className="middleMob__detail">
-                              {this.state.details}
+                              {this.state.detail}
                          </div>:
                          <div className="middleMob__review">
                          {this.state.reviews.map((review,i)=>{

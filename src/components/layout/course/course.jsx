@@ -137,14 +137,14 @@ import "aos/dist/aos.css"
                          <div  className="course__div_row-head">
                              {/* Export IMport Course */}
                          </div>
-                         <Link className="course__div_row-a" to="/exportimprotcourse">Details <img src={arrow} alt=""/></Link>
+                         <Link className="course__div_row-a" to="/export_import_course">Details <img src={arrow} alt=""/></Link>
                      </div>
                   </div>
                   <div className="course__wrapperMob">
                        <img src={coursemob} alt=""/>
                        <div className="course__wrapperMob_flex">
-                           <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                           <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/exportimprotcourse">View Details</Link>
+                           <Link className="course__wrapperMob_flex-a" to="/pricing">Buy</Link>
+                           <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/export_import_course">View Details</Link>
                        </div>
                   </div>
 
@@ -155,7 +155,8 @@ import "aos/dist/aos.css"
                 <div className="course__other">
                     <img className="course__other_img"  src={otherCourse1} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
-                    <div className="course__other_title">course title</div>
+                    <div className="course__other_title">Regulation on Transport
+                        <br/>of Dangerous Goods</div>
                     <div className="course__other_text">
                         <div className="course__other_text-title">Regulation on Transport
                         <br/>of Dangerous Goods</div>
@@ -209,18 +210,19 @@ import "aos/dist/aos.css"
 
 
                         </div>
-                        <Link  className="course__div_row-a" to="/othercourse1">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/regulation_on_transport_of_dangerous_goods_course">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
-                        <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/othercourse1">View Details</Link>
+                        <Link className="course__wrapperMob_flex-a" to="/about">Buy</Link>
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/regulation_on_transport_of_dangerous_goods_course">View Details</Link>
                     </div>
                 </div>
 
                 <div className="course__other">
                     <img className="course__other_img"  src={otherCourse1} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
-                    <div className="course__other_title">course title</div>
+                    <div className="course__other_title">Certification in
+                        <br/>Warehousing</div>
                     <div className="course__other_text">
                         <div className="course__other_text-title">Certification in
                         <br/>Warehousing</div>
@@ -274,24 +276,24 @@ import "aos/dist/aos.css"
 
 
                         </div>
-                        <Link  className="course__div_row-a" to="/othercourse2">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/certification_in_warehousing_course">Details <img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
-                        <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/othercourse2">View Details</Link>
+                        <Link className="course__wrapperMob_flex-a" to="/about">Buy</Link>
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/certification_in_warehousing_course">View Details</Link>
                     </div>
                 </div>
 
                 <div className="course__other">
                     <img className="course__other_img"  src={otherCourse1} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
-                    <div className="course__other_title">course title</div>
+                    <div className="course__other_title">5 week course</div>
                     <div className="course__other_text">
-                        <div className="course__other_text-title">Regulation Courses
-                        <br/>Export Import</div>
-                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div>
+                        <div className="course__other_text-title">5 week course
+                        </div>
+                        <div className="course__other_text-content">Lauching Soon</div>
                         <div className="course__other_grids">
-                            <div className="course__other_grids-item">
+                            {/* <div className="course__other_grids-item">
                                <svg xmlns="http://www.w3.org/2000/svg" width="41.264" height="41.264" viewBox="0 0 41.264 41.264">
                                  <path id="Icon_ionic-ios-time" data-name="Icon ionic-ios-time" d="M24.007,3.375A20.632,20.632,0,1,0,44.639,24.007,20.629,20.629,0,0,0,24.007,3.375ZM25.4,25.792a1.393,1.393,0,0,1-1.389,1.389H14.484a1.389,1.389,0,0,1,0-2.777h8.134V11.31a1.389,1.389,0,1,1,2.777,0Z" transform="translate(-3.375 -3.375)" fill="#525252"/>
                                </svg>
@@ -334,16 +336,16 @@ import "aos/dist/aos.css"
                                    <div><strong>6 weeks</strong></div>
                                    <div>duration</div>
                                </div>
-                            </div>
+                            </div> */}
 
 
 
                         </div>
-                        <Link  className="course__div_row-a" to="/othercourse3">Details <img src={arrow} alt=""/></Link>
+                        <Link  className="course__div_row-a" to="/about">Details<img src={arrow} alt=""/></Link>
                     </div>
                     <div className="course__wrapperMob_flex course__other_flex">
-                        <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>
-                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/othercourse3">View Details</Link>
+                        {/* <Link className="course__wrapperMob_flex-a" to="/about">Buy</Link> */}
+                        <Link className="course__wrapperMob_flex-a course__wrapperMob_flex-a--mod" to="/about">Details</Link>
                     </div>
                 </div>
 

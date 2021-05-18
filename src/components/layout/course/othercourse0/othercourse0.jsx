@@ -76,6 +76,8 @@ class OtherCourse1 extends Component{
         duration:"110 mins",
         subtitle:"12 Lessons"
       },
+
+      
       {
         title:"Exim procedure and commercial terms.",
         lessons:[],
@@ -83,6 +85,7 @@ class OtherCourse1 extends Component{
         duration:"30 mins",
         subtitle:"Lorem ipsum dolor sit amet"
       },
+     
       {
         title:"Government incentives &Initiatives.",
         lessons:[
@@ -104,6 +107,7 @@ class OtherCourse1 extends Component{
         duration:"10 mins",
         subtitle:"13 Lessons"
       },
+     
       {
         title:"Risk management and payment terms.",
         lessons:["Risk management",
@@ -114,7 +118,8 @@ class OtherCourse1 extends Component{
         locked:false,
         duration:"60 mins",
         subtitle:"4 Lessons"
-      }
+      },
+      
     ],
     panel:"lesson",
     reviews:[
@@ -137,7 +142,7 @@ class OtherCourse1 extends Component{
         name:"anuj bhatt"
       },
     ],
-    details:"Exim Education is an export-import"+
+    detail:"Exim Education is an export-import"+
    "training centre. Exim Education has"+
    "taken initiative to make people aware  of various opportunities in the"+
    "International market with its unique"+
@@ -165,7 +170,7 @@ class OtherCourse1 extends Component{
     // alert("otherCourse1__Wrapper_row1--"+(((p+1)%3)===0?"3":(p+1)%3));
     // alert("otherCourse1__Wrapper_row1--"+(((p+2)%3)===0?"3":(p+2)%3));
     this.setState({
-      panel:p===1?"lesson":p===2?"details":"reviews"
+      panel:p===1?"lesson":p===2?"detail":"reviews"
     })
     $(".otherCourse1__Wrapper_row1--"+(((p%3)===0)?"3":p)).css({"order":"-3"});
 
@@ -178,7 +183,7 @@ class OtherCourse1 extends Component{
     // alert("otherCourse1__Wrapper_row1--"+(((p+1)%3)===0?"3":(p+1)%3));
     // alert("otherCourse1__Wrapper_row1--"+(((p+2)%3)===0?"3":(p+2)%3));
     this.setState({
-      panel:p===1?"lesson":p===2?"details":"reviews"
+      panel:p===1?"lesson":p===2?"detail":"reviews"
     })
   }
 
@@ -203,7 +208,7 @@ class OtherCourse1 extends Component{
 
       return (
            <div className="otherCourse1">
-               <h1 className="heading-primary landing__3_heading">export import course details</h1>
+               <h1 className="heading-primary landing__3_heading">export import course detail</h1>
                <div className="course__div">
                     <img className="course__div_route" src={pr} alt=""/>
                    <div className="course__wrapper">
@@ -225,7 +230,7 @@ class OtherCourse1 extends Component{
                     <div className="course__wrapperMob">
                          <img src={coursemob} alt=""/>
                          <div className="course__wrapperMob_flex">
-                             <Link className="course__wrapperMob_flex-a" to="/">Buy</Link>                             
+                             <Link className="course__wrapperMob_flex-a" to="/pricing">Buy</Link>                             
                          </div>
                          <h1 className="heading-primary landing__3_heading">Introduction to international trade</h1>
                          <div className="course__wrapperMob_grid">
@@ -288,7 +293,7 @@ class OtherCourse1 extends Component{
                                 Lesson
                          </div>
                          <div onClick={()=>{this.panelHandler(2)}} className="otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2">
-                                Details
+                                Detail
                          </div>
                          <div onClick={()=>{this.panelHandler(3)}} className="otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--3">
                                 Reviews
@@ -301,8 +306,8 @@ class OtherCourse1 extends Component{
                          <svg xmlns="http://www.w3.org/2000/svg" width="1" height="19" viewBox="0 0 1 19">
                             <line id="Line_2" data-name="Line 2" y2="19" transform="translate(0.5)" fill="none" stroke="#bababa" stroke-width="1"/>
                          </svg>
-                         <div onClick={()=>{this.panelHandlermob(2)}} className={this.state.panel==="details"?"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 otherCourse1__Wrapper_row2--selected":"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 "}>
-                                Details
+                         <div onClick={()=>{this.panelHandlermob(2)}} className={this.state.panel==="detail"?"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 otherCourse1__Wrapper_row2--selected":"otherCourse1__Wrapper_row1--item otherCourse1__Wrapper_row1--2 "}>
+                                Detail
                          </div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="1" height="19" viewBox="0 0 1 19">
                            <line id="Line_2" data-name="Line 2" y2="19" transform="translate(0.5)" fill="none" stroke="#bababa" stroke-width="1"/>
@@ -371,9 +376,9 @@ class OtherCourse1 extends Component{
                                        </div>
                               })}
                          </div>
-                         :this.state.panel==="details"?
+                         :this.state.panel==="detail"?
                          <div className="middle__detail">
-                              {this.state.details}
+                              {this.state.detail}
                          </div>:
                          <div className="middle__review">
                               {this.state.reviews.map((review,i)=>{
@@ -452,9 +457,9 @@ class OtherCourse1 extends Component{
                                         </div>
                                })}
                          </div>
-                         :this.state.panel==="details"?
+                         :this.state.panel==="detail"?
                          <div className="middleMob__detail">
-                              {this.state.details}
+                              {this.state.detail}
                          </div>:
                          <div className="middleMob__review">
                          {this.state.reviews.map((review,i)=>{

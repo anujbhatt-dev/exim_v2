@@ -135,13 +135,13 @@ class Layout extends Component {
               <Route exact path="/courses">
                 <Course page="COURSES" url={this.state.url} />
               </Route>
-              <Route exact path="/ExportImprotCourse">
+              <Route exact path="/export_import_course">
                 <OtherCourse0 page="COURSES" url={this.state.url} />
               </Route>
-              <Route exact path="/othercourse1">
+              <Route exact path="/regulation_on_transport_of_dangerous_goods_course">
                 <OtherCourse1 page="COURSES" url={this.state.url} />
               </Route>
-              <Route exact path="/othercourse2">
+              <Route exact path="/certification_in_warehousing_course">
                 <OtherCourse2 page="COURSES" url={this.state.url} />
               </Route>
               <Route exact path="/othercourse3">
