@@ -18,32 +18,32 @@ import "aos/dist/aos.css"
     state={
       courses:[
         {
-          title:"Parties and places involved in import/ export",
+          title:"Introduction to international trade.",
           lessons:"140 mins",
           locked:false
         },
         {
-          title:"Types of Transportation, Container and packaging",
+          title:"Finding market and product selection.",
           lessons:"80 mins",
           locked:true
         },
         {
-          title:"Basic Registration for Exim",
+          title:"Export documentation.",
           lessons:"110 mins",
           locked:true
         },
         {
-          title:"Export Incentives",
+          title:"Exim procedure and commercial terms.",
           lessons:"30 mins",
           locked:true
         },
         {
-          title:"Incoterms",
+          title:"Government incentives &Initiatives.",
           lessons:"10 mins",
           locked:true
         },
         {
-          title:"Basic Terms",
+          title:"Risk management and payment terms.",
           lessons:"60 mins",
           locked:true
         },
@@ -157,16 +157,16 @@ import "aos/dist/aos.css"
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
                     <div className="course__other_title">course title</div>
                     <div className="course__other_text">
-                        <div className="course__other_text-title">Regulation Courses
-                        <br/>Export Import</div>
-                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div>
+                        <div className="course__other_text-title">Regulation on Transport
+                        <br/>of Dangerous Goods</div>
+                        {/* <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div> */}
                         <div className="course__other_grids">
                             <div className="course__other_grids-item">
                                <svg xmlns="http://www.w3.org/2000/svg" width="41.264" height="41.264" viewBox="0 0 41.264 41.264">
                                  <path id="Icon_ionic-ios-time" data-name="Icon ionic-ios-time" d="M24.007,3.375A20.632,20.632,0,1,0,44.639,24.007,20.629,20.629,0,0,0,24.007,3.375ZM25.4,25.792a1.393,1.393,0,0,1-1.389,1.389H14.484a1.389,1.389,0,0,1,0-2.777h8.134V11.31a1.389,1.389,0,1,1,2.777,0Z" transform="translate(-3.375 -3.375)" fill="#525252"/>
                                </svg>
                                <div className="course__other_grids-item--div">
-                                   <div><strong>6 weeks</strong></div>
+                                   <div><strong>14 weeks</strong></div>
                                    <div>duration</div>
                                </div>
                             </div>
@@ -176,8 +176,8 @@ import "aos/dist/aos.css"
                                </svg>
 
                                <div className="course__other_grids-item--div">
-                                   <div><strong>6 weeks</strong></div>
-                                   <div>duration</div>
+                                   <div><strong>6 modules</strong></div>
+                                   {/* <div>duration</div> */}
                                </div>
 
                             </div>
@@ -191,8 +191,8 @@ import "aos/dist/aos.css"
                                  </g>
                                  </svg>
                                  <div className="course__other_grids-item--div">
-                                     <div><strong>6 weeks</strong></div>
-                                     <div>duration</div>
+                                     <div><strong>Live Lectures</strong></div>
+                                     {/* <div>duration</div> */}
                                  </div>
                             </div>
 
@@ -201,8 +201,8 @@ import "aos/dist/aos.css"
                                  <path id="Icon_ionic-md-bookmark" data-name="Icon ionic-md-bookmark" d="M30.862,4.5H11.583A3.718,3.718,0,0,0,7.875,8.208V40.092L21.222,34.16l13.347,5.932V8.208A3.718,3.718,0,0,0,30.862,4.5Z" transform="translate(-7.875 -4.5)" fill="#525252"/>
                                  </svg>
                                <div className="course__other_grids-item--div">
-                                   <div><strong>6 weeks</strong></div>
-                                   <div>duration</div>
+                                   <div><strong>Certification</strong></div>
+                                   {/* <div>duration</div> */}
                                </div>
                             </div>
 
@@ -222,16 +222,16 @@ import "aos/dist/aos.css"
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
                     <div className="course__other_title">course title</div>
                     <div className="course__other_text">
-                        <div className="course__other_text-title">Regulation Courses
-                        <br/>Export Import</div>
-                        <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div>
+                        <div className="course__other_text-title">Certification in
+                        <br/>Warehousing</div>
+                        {/* <div className="course__other_text-content">Lorem ipsum dolor sit amet, consectetur</div> */}
                         <div className="course__other_grids">
                             <div className="course__other_grids-item">
                                <svg xmlns="http://www.w3.org/2000/svg" width="41.264" height="41.264" viewBox="0 0 41.264 41.264">
                                  <path id="Icon_ionic-ios-time" data-name="Icon ionic-ios-time" d="M24.007,3.375A20.632,20.632,0,1,0,44.639,24.007,20.629,20.629,0,0,0,24.007,3.375ZM25.4,25.792a1.393,1.393,0,0,1-1.389,1.389H14.484a1.389,1.389,0,0,1,0-2.777h8.134V11.31a1.389,1.389,0,1,1,2.777,0Z" transform="translate(-3.375 -3.375)" fill="#525252"/>
                                </svg>
                                <div className="course__other_grids-item--div">
-                                   <div><strong>6 weeks</strong></div>
+                                   <div><strong>1 week</strong></div>
                                    <div>duration</div>
                                </div>
                             </div>
@@ -241,8 +241,8 @@ import "aos/dist/aos.css"
                                </svg>
 
                                <div className="course__other_grids-item--div">
-                                   <div><strong>6 weeks</strong></div>
-                                   <div>duration</div>
+                                   <div><strong>5 modules</strong></div>
+                                   {/* <div>duration</div> */}
                                </div>
 
                             </div>
@@ -256,8 +256,8 @@ import "aos/dist/aos.css"
                                  </g>
                                  </svg>
                                  <div className="course__other_grids-item--div">
-                                     <div><strong>6 weeks</strong></div>
-                                     <div>duration</div>
+                                     <div><strong>Live Lecture</strong></div>
+                                     {/* <div>duration</div> */}
                                  </div>
                             </div>
 
@@ -266,8 +266,8 @@ import "aos/dist/aos.css"
                                  <path id="Icon_ionic-md-bookmark" data-name="Icon ionic-md-bookmark" d="M30.862,4.5H11.583A3.718,3.718,0,0,0,7.875,8.208V40.092L21.222,34.16l13.347,5.932V8.208A3.718,3.718,0,0,0,30.862,4.5Z" transform="translate(-7.875 -4.5)" fill="#525252"/>
                                  </svg>
                                <div className="course__other_grids-item--div">
-                                   <div><strong>6 weeks</strong></div>
-                                   <div>duration</div>
+                                   <div><strong>Certification</strong></div>
+                                   {/* <div>duration</div> */}
                                </div>
                             </div>
 

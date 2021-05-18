@@ -167,8 +167,8 @@ class OtherCourse1 extends Component{
                                   </svg>
 
                                   <div className="course__wrapperMob_grid-item--div">
-                                      <div><strong>6 weeks</strong></div>
-                                      <div>duration</div>
+                                      <div><strong>1 week</strong></div>
+                                      <div>Duration</div>
                                   </div>
 
                                </div>
@@ -180,8 +180,8 @@ class OtherCourse1 extends Component{
                                   </svg>
 
                                   <div className="course__wrapperMob_grid-item--div">
-                                      <div><strong>6 weeks</strong></div>
-                                      <div>duration</div>
+                                      <div><strong>5 modules</strong></div>
+                                      {/* <div>duration</div> */}
                                   </div>
 
                                </div>
@@ -195,8 +195,8 @@ class OtherCourse1 extends Component{
                                     </g>
                                     </svg>
                                     <div className="course__wrapperMob_grid-item--div">
-                                        <div><strong>6 weeks</strong></div>
-                                        <div>duration</div>
+                                        <div><strong>Live Lecture</strong></div>
+                                        {/* <div>duration</div> */}
                                     </div>
                                </div>
 
@@ -205,8 +205,8 @@ class OtherCourse1 extends Component{
                                     <path id="Icon_ionic-md-bookmark" data-name="Icon ionic-md-bookmark" d="M30.862,4.5H11.583A3.718,3.718,0,0,0,7.875,8.208V40.092L21.222,34.16l13.347,5.932V8.208A3.718,3.718,0,0,0,30.862,4.5Z" transform="translate(-7.875 -4.5)" fill="#525252"/>
                                     </svg>
                                   <div className="course__wrapperMob_grid-item--div">
-                                      <div><strong>6 weeks</strong></div>
-                                      <div>duration</div>
+                                      <div><strong>Certification</strong></div>
+                                      {/* <div>duration</div> */}
                                   </div>
                                </div>
                          </div>
