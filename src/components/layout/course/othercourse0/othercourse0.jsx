@@ -124,22 +124,28 @@ class OtherCourse1 extends Component{
     panel:"lesson",
     reviews:[
       {
-        review:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit, aliquid. Blanditiis expedita culpa vitae numquam laborum consectetur quam illo, dolore, excepturi perferendis voluptatibus, saepe non! Ullam modi voluptatem saepe omnis amet dolore facilis illo! Veniam tempore quas esse excepturi id fugit repellendus maiores consequuntur ipsam, dolore magni deleniti fuga velit recusandae! Repudiandae itaque unde sint. Aliquid quam, impedit ullam delectus deleniti voluptas iste quae explicabo quia sint mollitia, eveniet itaque in, atque nam asperiores est ea, beatae assumenda aliquam. Soluta labore saepe quos debitis iusto nam assumenda ipsa, dolor fugit aspernatur maxime eos necessitatibus voluptatem exercitationem quia, laborum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam mollitia molestiae in fugiat totam. Animi tenetur possimus quod atque mollitia ab ratione at optio eius, quaerat ullam dolore, ea amet saepe adipisci fugit voluptas quis, enim reiciendis. Possimus aperiam doloremque quibusdam ea, sunt sapiente dolores fuga quae quod, vero est consequuntur voluptatem ut! Eligendi deleniti ea dolorem sint rerum explicabo porro vel aut provident maxime harum, quisquam, numquam quod nihil natus atque officiis eius, quas alias distinctio vitae. Optio cupiditate ducimus eaque. Possimus, deserunt, alias. Incidunt laboriosam distinctio ipsa, voluptatum libero itaque animi qui provident voluptates maiores quibusdam, minus, excepturi quam deleniti veritatis explicabo odio quae cupiditate impedit placeat molestias laudantium! Itaque, distinctio ut molestias illo quas suscipit eos aliquid accusantium, dolore nihil aut consequatur ex possimus fugit laborum numquam, aliquam consectetur harum saepe. Laudantium suscipit, at eveniet. Similique, repellendus modi voluptates ullam. Iusto recusandae deserunt, et, quas rerum quasi ut voluptatibus sit delectus corporis temporibus sapiente odit autem, beatae. Labore consectetur harum voluptatum dolorum quam, sequi obcaecati nulla minima modi voluptatem quia, quibusdam dolorem qui sit porro, veniam nisi aliquam et. Itaque, voluptatem obcaecati iste atque dignissimos enim aut corporis, voluptates quod sunt adipisci. Ab reiciendis accusantium, rerum consequuntur?",
-        rating:3,
+        review:"Career oriented Export & Import (Exim) course- helpful tutors. Happy to be part of this institute",
+        rating:4,
         locked:false,
-        name:"anuj bhatt"
+        name:"Charvi jain"
       },
       {
-        review:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit, aliquid. Blanditiis expedita culpa vitae numquam laborum consectetur quam illo, dolore, excepturi perferendis voluptatibus, saepe non! Ullam modi voluptatem saepe omnis amet dolore facilis illo! Veniam tempore quas esse excepturi id fugit repellendus maiores consequuntur ipsam, dolore magni deleniti fuga velit recusandae! Repudiandae itaque unde sint. Aliquid quam, impedit ullam delectus deleniti voluptas",
-        rating:3,
+        review:"Exim Education provided me with full support when I planned to step in export business. Thank you Exim Education!",
+        rating:4,
         locked:false,
-        name:"sagar panwar"
+        name:"Rushab Jain"
       },
       {
-        review:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit, aliquid. Blanditiis expedita culpa vitae numquam laborum consectetur quam illo, dolore, excepturi perferendis voluptatibus, saepe non! Ullam modi voluptatem saepe omnis amet dolore facilis illo! Veniam tempore quas esse excepturi id fugit repellendus maiores consequuntur ipsam, dolore magni deleniti fuga velit recusandae! Repudiandae itaque unde sint. Aliquid quam, impedit ullam delectus deleniti voluptas iste quae explicabo quia sint mollitia, eveniet itaque in, atque nam asperiores est ea, beatae assumenda aliquam. Soluta labore saepe quos debitis iusto nam assumenda ipsa, dolor fugit aspernatur maxime eos necessitatibus voluptatem exercitationem quia, laborum ipsam!",
+        review:"I’m glad to shift from a local market to international with your guidance and support. Thank you for my progress.",
         rating:5,
         locked:false,
-        name:"anuj bhatt"
+        name:"Dheeraj shrishrimal"
+      },
+      {
+        review:"Completed import export certification course, great learning experience. One thing is for sure that I can step in the International market without fear. Thank you Exim Education.",
+        rating:5,
+        locked:false,
+        name:"Mithilesh Kumar"
       },
     ],
     detail:"Exim Education is an export-import"+
