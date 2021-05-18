@@ -80,7 +80,7 @@ class OtherCourse1 extends Component{
 
 
       {
-        title:"Exim procedure and commercial terms.",
+        title:"Risk management and payment terms.",
         lessons:[],
         locked:false,
         duration:"30 mins",
@@ -110,7 +110,7 @@ class OtherCourse1 extends Component{
       },
 
       {
-        title:"Risk management and payment terms.",
+        title:"Exim procedure and commercial terms.",
         lessons:["Risk management",
         "Marine Insurance",
         "ECGC",
