@@ -196,7 +196,7 @@
         align-items: flex-start;
         margin-bottom: 4rem;
         width: 60%;
-        margin-left: 20rem;
+        margin-left: 05rem;
         @include respond(tab-port){
           margin-bottom: 2rem;
           width: 100%;
@@ -208,6 +208,7 @@
           width:8rem;
         }
         &-middle{
+          flex-grow: 1;
            margin: 0 10rem 0 5rem;
            @include respond(tab-port){
               margin: 0 1rem 0 1rem;
@@ -229,14 +230,14 @@
                 color: $color-exim-dark-grey;
                 font-weight: bold;
                 margin-bottom: 1rem;
-                margin-left: 2rem;
+                // margin-left: 2rem;
 
            }
            & .lesson{
              font-size: 1.5rem;
              color: $color-exim-dark-grey;
              transition: all .5;
-             margin-left: -1.5rem;
+             // margin-left: -1.5rem;
              @include respond(tab-port){
                 margin: 0;
 
