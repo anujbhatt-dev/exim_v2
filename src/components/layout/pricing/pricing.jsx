@@ -35,7 +35,7 @@ class Pricing extends Component {
         locked:true
       },
       {
-        title:"Exim procedure and commercial terms.",
+        title:"Risk management and payment terms.",
         lessons:"30 mins",
         locked:true
       },
@@ -45,7 +45,7 @@ class Pricing extends Component {
         locked:true
       },
       {
-        title:"Risk management and payment terms.",
+        title:"Exim procedure and commercial terms.",
         lessons:"60 mins",
         locked:true
       },

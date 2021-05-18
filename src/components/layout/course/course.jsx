@@ -8,6 +8,8 @@ import file from "../../../assets/images/file.svg";
 import coursemob from "../../../assets/images/coursemob.svg";
 import coursemob2 from "../../../assets/images/coursemob2.svg";
 import otherCourse1 from "../../../assets/images/otherCourse1.svg";
+import otherCourse2 from "../../../assets/images/othercourse2.svg";
+import otherCourse3 from "../../../assets/images/othercourse3.svg";
 import pr from "../../../assets/images/planeRoute.svg";
 import Aos from "aos"
 import {Helmet} from "react-helmet"
@@ -33,7 +35,7 @@ import "aos/dist/aos.css"
           locked:true
         },
         {
-          title:"Exim procedure and commercial terms.",
+          title:"Risk management and payment terms.",
           lessons:"30 mins",
           locked:true
         },
@@ -43,8 +45,8 @@ import "aos/dist/aos.css"
           locked:true
         },
         {
-          title:"Risk management and payment terms.",
           lessons:"60 mins",
+          title:"Exim procedure and commercial terms.",
           locked:true
         },
         // {
@@ -219,7 +221,7 @@ import "aos/dist/aos.css"
                 </div>
 
                 <div className="course__other">
-                    <img className="course__other_img"  src={otherCourse1} alt=""/>
+                    <img className="course__other_img"  src={otherCourse2} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
                     <div className="course__other_title">Certification in
                         <br/>Warehousing</div>
@@ -285,7 +287,7 @@ import "aos/dist/aos.css"
                 </div>
 
                 <div className="course__other">
-                    <img className="course__other_img"  src={otherCourse1} alt=""/>
+                    <img className="course__other_img"  src={otherCourse3} alt=""/>
                     <img className="course__other_imgMob"  src={coursemob2} alt=""/>
                     <div className="course__other_title">5 week course</div>
                     <div className="course__other_text">

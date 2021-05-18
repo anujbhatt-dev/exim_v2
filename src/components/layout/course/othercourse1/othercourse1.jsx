@@ -4,6 +4,7 @@ import bgCC from "../../../../assets/images/bgCC.svg"
 import apple1 from "../../../../assets/images/apple1.svg"
 import play1 from "../../../../assets/images/play1.svg"
 import whyJoin from "../../../../assets/images/whyJoin.svg"
+import whyJoin2 from "../../../../assets/images/whyJoin2.svg"
 import handPhone from "../../../../assets/images/handPhone.svg"
 import pr from "../../../../assets/images/planeRoute.svg";
 import coursemob from "../../../../assets/images/coursemob.svg";
@@ -42,7 +43,7 @@ class OtherCourse1 extends Component{
         duration:"110 mins",
         subtitle:"Lorem ipsum dolor sit amet"
       },
-     
+
     ],
     panel:"lesson",
     reviews:[
@@ -84,7 +85,7 @@ class OtherCourse1 extends Component{
    "smoothen every topic and solve the"+
    "doubts you have relating to variant"+
    "topics in export-import."
-  
+
   }
 
   componentDidMount = () => {
@@ -162,7 +163,7 @@ of Dangerous Goods</h1>
                     <div className="course__wrapperMob">
                          <img src={coursemob} alt=""/>
                          <div className="course__wrapperMob_flex">
-                             <Link className="course__wrapperMob_flex-a" to="/about">Buy</Link>                             
+                             <Link className="course__wrapperMob_flex-a" to="/about">Buy</Link>
                          </div>
                          <h1 className="heading-primary landing__3_heading">Introduction to international trade</h1>
                          <div className="course__wrapperMob_grid">
@@ -285,7 +286,7 @@ of Dangerous Goods</h1>
                                                   <li>
                                                     {l}
                                                   </li>)}
-   
+
                                               </ol>
                                               :null}</div>
                                           </div>
@@ -357,7 +358,7 @@ of Dangerous Goods</h1>
                                                    <li>
                                                      {l}
                                                    </li>)}
-    
+
                                                </ol>
                                                :null}</div>
                                            </div>
@@ -427,6 +428,7 @@ of Dangerous Goods</h1>
                 </div>
                 <h1 className="heading-primary landing__3_heading">why join exim education</h1>
                 <img className="otherCourse1__whyJoin" src={whyJoin} alt=""/>
+                <img className="otherCourse1__whyJoin2" src={whyJoin2} alt=""/>
                 <div className="otherCourse1__lastImg">
                     <img src={handPhone} alt=""/>
                     <a href="" className="otherCourse1__lastImg-apple otherCourse1__lastImg-btn"><img src={apple1} alt=""/></a>

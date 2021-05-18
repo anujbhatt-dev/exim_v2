@@ -74,10 +74,22 @@
     }
   }
   &__whyJoin{
-    width: 60%;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    @include respond(tab-port){
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__whyJoin2{
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    @include respond(tab-port){
+      display: none;
+    }
   }
   &__Wrapper{
     // width: 100vw;
@@ -112,7 +124,7 @@
       display: flex;
       justify-content: flex-start;
       align-items:center;
-      margin-left: 19rem;
+      margin-left: 15%;
       @include respond(tab-port){
         display: none;
       }
@@ -149,19 +161,20 @@
       }
     }
     & img{
-      width: 100vw;
-      margin-left: -12rem;
+      width: 100%;
+      // margin-left: -12rem;
       position: absolute;
       top: -6.5rem;
-      left: 11.5rem;
+      left: 0rem;
       // height: 100vh;
+
       z-index: -1;
       width: 100%;
       object-fit: cover;
       object-position: top;
       @include respond(tab-land){
         top: -5rem;
-        left: 13rem;
+        left: 0rem;
       }
       @include respond(tab-port){
         display: none;

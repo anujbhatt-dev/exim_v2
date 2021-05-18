@@ -22,10 +22,11 @@
       line-height: 1.5;
     }
     &_flex{
-      padding: 6rem 25rem;
+      padding: 6rem 15rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       @include respond(tab-port){
         flex-direction: column;
         padding: 1rem;
@@ -33,7 +34,7 @@
       &-item{
         height: 50rem;
         margin: 2%;
-        width: 32%;
+        width: 32rem;
         display: flex;
         justify-content: center;
         align-items: center;
