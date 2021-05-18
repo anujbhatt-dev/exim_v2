@@ -230,14 +230,12 @@
                 color: $color-exim-dark-grey;
                 font-weight: bold;
                 margin-bottom: 1rem;
-                // margin-left: 2rem;
 
            }
            & .lesson{
              font-size: 1.5rem;
              color: $color-exim-dark-grey;
              transition: all .5;
-             // margin-left: -1.5rem;
              @include respond(tab-port){
                 margin: 0;
 
