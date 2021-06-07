@@ -43,9 +43,9 @@ import googleplaybadge from "../../../assets/images/google-play-badge.png"
                         <div className="footer__top_social">
                             <div className="footer__top_social-heading">About Us</div>
                             <div  className="footer__top_social-icons">
-                               <Link to="/"><div>Terms</div></Link>
-                               <Link to="/blogs/main"><div>Blogs</div></Link>
-                               <Link to="/"><div>Privacy</div></Link>
+                               <Link to="/privacy"><div>Privacy</div></Link>
+                               <Link to="/refundpolicy"><div>Refund Policy</div></Link>
+                               <Link to="/terms"><div>Terms</div></Link>
                             </div>
                         </div>
                 </div>

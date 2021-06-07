@@ -4,6 +4,11 @@ import Landing from "./landing/landing";
 import Pricing from "./pricing/pricing";
 import AboutUs from "./aboutUs/aboutUs";
 import Course from "./course/course";
+
+import Terms from "./other/terms";
+import Refund from "./other/refund";
+import Privacy from "./other/privacy";
+
 import OtherCourse1 from "./course/othercourse1/othercourse1";
 import OtherCourse0 from "./course/othercourse0/othercourse0";
 import OtherCourse2 from "./course/othercourse2/othercourse2";
@@ -131,6 +136,23 @@ class Layout extends Component {
               <Route exact path="/about">
                 <AboutUs page="ABOUT" url={this.state.url} />
               </Route>
+
+              <Route exact path="/refundpolicy">
+                <Refund page="REFUNDPOLICY" url={this.state.url}/>
+              </Route>
+
+              <Route exact path="/terms">
+                <Terms  page="TERMS" url={this.state.url}/>
+              </Route>
+
+
+
+
+              <Route exact path="/privacy">
+                <Privacy page="PRIVACY" url={this.state.url}/>
+              </Route>
+
+
 
               <Route exact path="/courses">
                 <Course page="COURSES" url={this.state.url} />
