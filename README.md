@@ -1,4 +1,4 @@
-# EXIM Education Landing Page
+# EXIM Education
 
 This is a project code for EXIM Education, a platform dedicated to educating and enhancing the export-import skills of individuals in the working class. The website provides an intuitive and engaging interface for users to explore various courses, resources, and tools related to global trade.
 
